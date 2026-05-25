@@ -400,6 +400,82 @@ export default function DoneForYouWebsitePage() {
 
           </div>
 
+          {/* Pricing Section */}
+          <div className="mt-20 pt-20">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-white mb-4">How much does this website cost?</h2>
+              <p className="text-white/70 text-lg">$599 $79 one-time setup fee to build & launch your website and then $24.99 per month to run your website</p>
+            </div>
+
+            {/* Pricing Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Setup Fee Card */}
+              <div className="rounded-lg overflow-hidden bg-[#0a0a0a] border border-white/10">
+                <div className="bg-blue-600 px-6 py-6">
+                  <h3 className="text-2xl font-bold text-white">The $79 one-time setup fee includes:</h3>
+                </div>
+                <div className="p-8 space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">Fully built multi-page website, easy to edit anytime</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">Personalized design & SEO content</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">Ecommerce & bookings functionality</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">Website launched in 1 week</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">1-to-1 launch call to make any changes you need</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">30 days of unlimited edits by our team</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Monthly Fee Card */}
+              <div className="rounded-lg overflow-hidden bg-[#0a0a0a] border border-white/10">
+                <div className="bg-blue-600 px-6 py-6">
+                  <h3 className="text-2xl font-bold text-white">The $24.99 monthly fee includes:</h3>
+                </div>
+                <div className="p-8 space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">Domain name & pro email inbox</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">Fast, secure hosting & SSL</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">Unlimited sales, bookings & leads</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">0% fees on any transactions</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">Ongoing platform upgrades</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span className="text-white">Premium support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </section>
