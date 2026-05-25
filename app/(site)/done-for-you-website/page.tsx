@@ -399,36 +399,7 @@ export default function DoneForYouWebsitePage() {
             </div>
 
           </div>
-{/* Watch Platform Section */}
-<div className="mt-20">
-  <div className="relative rounded-3xl bg-gradient-to-r from-blue-600 to-blue-400 overflow-hidden px-8 sm:px-12 py-12 min-h-[420px]">
 
-    {/* Left Content */}
-    <div className="relative z-10 max-w-md pt-6">
-      <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8 leading-tight">
-        Watch how our platform works
-      </h2>
-
-      <button className="flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-50 transition w-fit">
-        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-        </svg>
-        Watch now
-      </button>
-    </div>
-
-    {/* Right Image */}
-    <div className="absolute right-0 bottom-0 w-[46%] sm:w-[48%] md:w-[44%] lg:w-[43%] translate-x-6 translate-y-4">
-      <img
-        src="/Done-for-you-images/feature-images/premium-restaurant-website-editor-ui-vertexia-done-for-you-website.webp"
-        alt="Premium restaurant website editor interface designed by Vertexia"
-        className="w-full h-auto object-contain"
-        loading="lazy"
-      />
-    </div>
-
-  </div>
-</div>
 
         </div>
       </section>
