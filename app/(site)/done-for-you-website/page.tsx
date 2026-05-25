@@ -198,6 +198,207 @@ export default function DoneForYouWebsitePage() {
             </div>
           </div>
 
+          {/* Features Section */}
+          <div className="mt-20 pt-20 bg-black rounded-lg px-8 py-12 border-t-0">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-white mb-4">What features are included in your Vertexia website?</h2>
+              <p className="text-white/70 text-lg">All the essentials to run a successful website or online store</p>
+            </div>
+
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Feature 1 */}
+              <div className="group">
+                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                  <img
+                    src="/Done-for-you-images/feature-images/custom-fitness-website-design-vertexia-done-for-you-website.webp"
+                    alt="Custom fitness website landing page designed by Vertexia featuring a modern gym and wellness theme with bold typography, responsive UI design, vibrant orange and navy color palette, and professional fitness branding for done-for-you website services."
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">Done-for-you website design & copy</h3>
+                <ul className="space-y-2 text-white/70 text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Visually upselling design and engaging layouts</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Device-responsive website design</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Compatible content for products, services, blogs, events and more</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>SEO copy and built-in tools to rank your business on Google</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Website set up to convert visitors into customers</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="group">
+                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                  <img
+                    src="/Done-for-you-images/feature-images/modern-product-showcase-ui-design-vertexia-done-for-you-website.webp"
+                    alt="Modern ecommerce product showcase interface designed by Vertexia featuring a minimalist candle product layout, glassmorphism UI elements, responsive web design, secure domain display, and premium done-for-you website styling for online brands."
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">Custom domain name & professional email</h3>
+                <ul className="space-y-2 text-white/70 text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Custom domain name or connect on existing domain</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Matching email address (e.g., yourname@business.com)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>New logo aligned with your brand</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>SSL certificate to keep your site secure</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="group">
+                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                  <img
+                    src="/Done-for-you-images/feature-images/creative-mobile-app-ui-design-vertexia-done-for-you-websi.webp"
+                    alt="Modern mobile app UI concept designed by Vertexia featuring a creative profile editor interface, custom color palette controls, premium typography elements, and responsive app design visuals for done-for-you website and brand"
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">Easy-to-use editor & unlimited edits done by us</h3>
+                <ul className="space-y-2 text-white/70 text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>User-friendly website editor so you easily edit anything anytime</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Add or update pages, products, portfolio, FAQs, and more</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Bloggers content to increase traffic</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Bonus service: unlimited edits done by us for the first 30 days to ensure you love the site you launch</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Feature 4 */}
+              <div className="group">
+                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                  <img
+                    src="/Done-for-you-images/feature-images/luxury-fashion-ecommerce-ui-design-vertexia-done-for-you-website.webp"
+                    alt="Luxury fashion ecommerce website interface designed by Vertexia featuring a premium shopping cart UI, modern apparel showcase, stylish model photography, responsive ecommerce layout, and conversion-focused done-for-you website design."
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">Unlimited sales with 0% commission</h3>
+                <ul className="space-y-2 text-white/70 text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Sales results from day one</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Unlimited shopping cart with unlimited products/data</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Multiple payment methods: credit & debit cards PayPal, Stripe—0% UENI commission</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Efficient and secure order products with unlimited product listings</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Feature 5 */}
+              <div className="group">
+                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                  <img
+                    src="/Done-for-you-images/feature-images/modern-restaurant-booking-ui-design-vertexia-done-for-you-website.webp"
+                    alt="Modern restaurant reservation website UI designed by Vertexia featuring elegant dining booking interface, premium food showcase, table reservation card, responsive hospitality web design, and conversion-focused done-for-you restaurant website layout."
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">Take appointments 24/7/365</h3>
+                <ul className="space-y-2 text-white/70 text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Appointment system ready-to-use from day one</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>24/7 appointment management with on-site booking or third-party integration</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Email confirmation & calendar sync for all bookings</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Business Vault access to manage and adjust bookings</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Feature 6 */}
+              <div className="group">
+                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                  <img
+                    src="/Done-for-you-images/feature-images/online-coaching-website-ui-design-vertexia-done-for-you-website.webp"
+                    alt="Modern online coaching website interface designed by Vertexia featuring live mentor sessions, professional coaching dashboard UI, responsive course platform layout, interactive learning experience, and premium done-for-you website design for coaches and consultants."
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">1-to-1 call before website launch</h3>
+                <ul className="space-y-2 text-white/70 text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Personalized 30-min call to finalize your website</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Discussed any changes desired before the website launch</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Training on the easy-to-use website editor for future updates</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-1">✓</span>
+                    <span>Onboarding on UENI features that will help your business grow</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
 
         </div>
       </section>
