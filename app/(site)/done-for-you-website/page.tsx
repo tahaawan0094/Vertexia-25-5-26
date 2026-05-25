@@ -3,6 +3,7 @@ import DoneForYouTable from "@/components/sections/DoneForYouTable";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import FaqSection from "@/components/sections/FaqSection";
 import ProfessionalWebSection from "@/components/sections/ProfessionalWebSection";
+import FooterLinksSection from "@/components/sections/FooterLinksSection";
 
 export const metadata = {
   title: "Done For You Website - Vertexia",
@@ -487,6 +488,9 @@ export default function DoneForYouWebsitePage() {
 
       {/* Professional Web Section */}
       <ProfessionalWebSection centered />
+
+      {/* Footer Links Section */}
+      <FooterLinksSection />
 
     </main>
   );
