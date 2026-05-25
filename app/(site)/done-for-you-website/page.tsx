@@ -118,7 +118,7 @@ export default function DoneForYouWebsitePage() {
                   <th className="text-left py-4 px-6 font-semibold">Features</th>
                   <th className="text-center py-4 px-6 font-semibold">
                     <div className="flex justify-center mb-2">
-                      <span className="text-2xl">V E R T E X I A</span>
+                      <span className="text-2xl whitespace-nowrap">VERTEXIA</span>
                     </div>
                     <div className="text-sm text-white/70">100% - 10-20%</div>
                   </th>
@@ -198,24 +198,7 @@ export default function DoneForYouWebsitePage() {
             </div>
           </div>
 
-          {/* Pricing Row */}
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <p className="text-white/70 mb-2">Starting from</p>
-              <p className="text-4xl font-bold text-green-500">$79 setup</p>
-              <p className="text-white/70 mt-1">+ $24.99/mo</p>
-            </div>
-            <div className="text-center">
-              <p className="text-white/70 mb-2">DIY</p>
-              <p className="text-4xl font-bold text-white">$500</p>
-              <p className="text-white/70 mt-1">every year + endless time tinkering</p>
-            </div>
-            <div className="text-center">
-              <p className="text-white/70 mb-2">Agency</p>
-              <p className="text-4xl font-bold text-white">$1500-$3000</p>
-              <p className="text-white/70 mt-1">setup + maintenance costs</p>
-            </div>
-          </div>
+
         </div>
       </section>
     </main>
