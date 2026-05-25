@@ -3,7 +3,7 @@ import FadeIn from "@/components/animations/FadeIn";
 
 export default function HowItWorksSection() {
   return (
-    <section className="relative overflow-hidden bg-[#040404] px-6 pb-32 pt-24 text-white max-[640px]:pb-8 max-[640px]:pt-8">
+    <section className="relative overflow-hidden bg-[#040404] px-6 pb-32 pt-8 text-white max-[640px]:pb-8 max-[640px]:pt-4">
       <div className="pointer-events-none absolute inset-y-0 right-0 w-[55%] bg-[radial-gradient(80%_70%_at_70%_55%,rgba(40,72,180,0.35)_0%,rgba(5,5,5,0)_70%)]" />
       <FadeIn>
         <div className="relative mx-auto max-w-[1200px]">

@@ -17,17 +17,6 @@ export default function PricingSection() {
         aria-hidden="true"
       />
 
-      {/* Phone contact - Top Right */}
-      <div className="absolute top-8 right-8 max-[640px]:hidden">
-        <div className="rounded-full border border-white/30 bg-white/5 backdrop-blur-md px-6 py-4 flex items-center gap-4">
-          <div className="flex flex-col items-start">
-            <p className="text-white/70 text-[0.85rem]">Got Questions, call us:</p>
-            <p className="text-white font-semibold text-lg">(205) 551-9730</p>
-            <p className="text-white/60 text-[0.8rem]">Mon-Fri 9am-8pm ET</p>
-          </div>
-        </div>
-      </div>
-
       <StaggerContainer className="relative z-10 mx-auto max-w-[1280px] px-6">
         {/* Header Label */}
         <StaggerItem>

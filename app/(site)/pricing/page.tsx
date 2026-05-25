@@ -1,8 +1,4 @@
 import PricingSection from "@/components/sections/PricingSection";
-import TrustpilotSection from "@/components/sections/TrustpilotSection";
-import FaqSection from "@/components/sections/FaqSection";
-import ProfessionalWebSection from "@/components/sections/ProfessionalWebSection";
-import FooterLinksSection from "@/components/sections/FooterLinksSection";
 
 export const metadata = {
   title: "Pricing - Vertexia",
@@ -13,10 +9,6 @@ export default function PricingPage() {
   return (
     <main className="site">
       <PricingSection />
-      <TrustpilotSection />
-      <FaqSection />
-      <ProfessionalWebSection />
-      <FooterLinksSection />
     </main>
   );
 }
