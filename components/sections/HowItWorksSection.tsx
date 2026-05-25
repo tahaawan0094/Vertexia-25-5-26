@@ -55,8 +55,8 @@ export default function HowItWorksSection({
                   />
 
                   <img
-                    src="/images%205/662fbd88fb3018e820bf64b2_thumb-how-does-it-work-desk.webp"
-                    alt="How it works preview"
+                    src="/images 5/modern-fashion-ecommerce-website-design-by-vertexia.png"
+                    alt="Modern fashion ecommerce website design by Vertexia featuring elegant product showcase, minimalist UI, and responsive online store layout."
                     className="h-full w-full object-cover"
                   />
                 </picture>
