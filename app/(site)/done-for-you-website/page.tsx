@@ -22,21 +22,103 @@ export default function DoneForYouWebsitePage() {
 
       {/* Comparison Table Section */}
       <section className="bg-black px-4 py-20 sm:px-6 lg:px-8">
+        <style>{`
+          @keyframes movingLight {
+            0% {
+              conic-gradient-position: 0deg;
+            }
+            100% {
+              conic-gradient-position: 360deg;
+            }
+          }
+          
+          .animated-table-border {
+            position: relative;
+            background: linear-gradient(black, black) padding-box,
+              conic-gradient(from var(--rotation, 0deg), #FF5A4E, #00FF88, #FF5A4E) border-box;
+            border: 2px solid transparent;
+            animation: rotateBorder 4s linear infinite;
+          }
+          
+          @keyframes rotateBorder {
+            0% {
+              --rotation: 0deg;
+              filter: drop-shadow(0 0 10px rgba(255, 90, 78, 0.6));
+            }
+            50% {
+              filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.6));
+            }
+            100% {
+              --rotation: 360deg;
+              filter: drop-shadow(0 0 10px rgba(255, 90, 78, 0.6));
+            }
+          }
+          
+          .table-glow-effect {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            background: black;
+            border: 2px solid;
+            border-image: linear-gradient(45deg, #FF5A4E, #00FF88, #FF5A4E, #FF5A4E) 1;
+            animation: borderGlow 4s ease-in-out infinite;
+          }
+          
+          @keyframes borderGlow {
+            0%, 100% {
+              box-shadow: 0 0 20px rgba(255, 90, 78, 0.5), inset 0 0 20px rgba(255, 90, 78, 0.1);
+            }
+            50% {
+              box-shadow: 0 0 30px rgba(0, 255, 136, 0.5), inset 0 0 30px rgba(0, 255, 136, 0.1);
+            }
+          }
+          
+          .table-glow-effect::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: conic-gradient(from 0deg, #FF5A4E, #00FF88, #FF5A4E);
+            opacity: 0;
+            animation: glowRotate 4s linear infinite;
+            border-radius: 12px;
+            z-index: -1;
+            pointer-events: none;
+          }
+          
+          @keyframes glowRotate {
+            0% {
+              opacity: 0.3;
+              transform: rotate(0deg);
+            }
+            50% {
+              opacity: 0.6;
+            }
+            100% {
+              opacity: 0.3;
+              transform: rotate(360deg);
+            }
+          }
+          
+          .animated-table-border table {
+            background: black;
+          }
+        `}</style>
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">What makes UENI different?</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">What makes Vertexia different?</h2>
             <p className="text-white/70 text-lg">Say goodbye to DIY builders and web agencies and get the best of both</p>
           </div>
 
           {/* Table */}
-          <div className="overflow-x-auto">
+          <div className="relative rounded-lg overflow-hidden table-glow-effect">
+            <div className="overflow-x-auto">
             <table className="w-full text-white">
               <thead>
                 <tr className="border-b border-white/20">
                   <th className="text-left py-4 px-6 font-semibold">Features</th>
                   <th className="text-center py-4 px-6 font-semibold">
                     <div className="flex justify-center mb-2">
-                      <span className="text-2xl">U E N I</span>
+                      <span className="text-2xl">V E R T E X I A</span>
                     </div>
                     <div className="text-sm text-white/70">100% - 10-20%</div>
                   </th>
@@ -113,6 +195,7 @@ export default function DoneForYouWebsitePage() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
 
           {/* Pricing Row */}
