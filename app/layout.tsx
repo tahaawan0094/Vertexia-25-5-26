@@ -25,8 +25,8 @@ const montserrat = Montserrat({
 
 
 export const metadata: Metadata = {
-  title: "Vertexia | Custom Website Development Company in Pakistan",
-  description: "Vertexia is a Pakistan-based web development agency building fast, SEO-friendly custom websites.",
+  title: "Vertexia - Web Development Company in Karachi, Pakistan",
+  description: "Vertexia provides professional web development services. We build custom websites, ecommerce stores, and SEO-optimized digital solutions for growing businesses.",
   icons: {
     icon: [
       { url: "/favicon_io/favicon-32x32.png", sizes: "32x32", type: "image/png" },
