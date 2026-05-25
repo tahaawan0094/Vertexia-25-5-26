@@ -486,7 +486,7 @@ export default function DoneForYouWebsitePage() {
       <FaqSection />
 
       {/* Professional Web Section */}
-      <ProfessionalWebSection />
+      <ProfessionalWebSection centered />
 
     </main>
   );
