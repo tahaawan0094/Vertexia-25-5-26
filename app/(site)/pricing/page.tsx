@@ -1,8 +1,8 @@
 import PricingSection from "@/components/sections/PricingSection";
 
 export const metadata = {
-  title: "Pricing - Vertexia",
-  description: "Affordable website pricing plans for your business. Launch, manage, and grow your business online with our transparent pricing.",
+  title: "Website Development Pricing Pakistan | Vertexia",
+  description: "Affordable custom website development packages for businesses in Pakistan.",
 };
 
 export default function PricingPage() {

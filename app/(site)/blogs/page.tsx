@@ -5,6 +5,11 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { StaggerContainer, StaggerItem } from "@/components/animations/StaggerContainer";
 
+export const metadata = {
+  title: "Web Development & SEO Blog | Vertexia",
+  description: "Read guides on web development, SEO, and growing your business online.",
+};
+
 export default function BlogsPage() {
   const words = ["Tradespeople", "Professionals", "Small Business"];
   const [index, setIndex] = useState(0);

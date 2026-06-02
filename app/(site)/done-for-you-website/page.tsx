@@ -6,9 +6,9 @@ import ProfessionalWebSection from "@/components/sections/ProfessionalWebSection
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
 
 export const metadata = {
-  title: "Done For You Website - Vertexia",
+  title: "Done For You Website Service | Vertexia",
   description:
-    "Get a website built for you in 7 days. Domain, hosting, security and 0% transaction fees.",
+    "Complete website design and development service handled from start to finish.",
 };
 
 export default function DoneForYouWebsitePage() {
