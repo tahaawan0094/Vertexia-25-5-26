@@ -1,3 +1,5 @@
+import FooterLinksSection from "@/components/sections/FooterLinksSection";
+
 export const metadata = {
   title: "About Vertexia | Building Websites That Drive Growth",
   description:
@@ -301,6 +303,8 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
+
+      <FooterLinksSection />
     </main>
   );
 }
