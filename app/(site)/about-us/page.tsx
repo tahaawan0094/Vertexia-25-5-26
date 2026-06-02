@@ -280,6 +280,27 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
+
+      <section className="bg-[linear-gradient(180deg,rgb(15,67,252)_0%,rgb(14,44,148)_100%)] px-4 py-24 text-white sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#93c5fd] font-accent">
+            Pronunciation
+          </p>
+          <h2 className="mt-4 text-4xl font-display font-bold leading-tight sm:text-5xl">
+            How do you pronounce UENI?
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-100 font-body">
+            It’s you and I. Yeah, no one gets it the first time, but then...
+          </p>
+          <div className="mt-10 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white/15">
+            <img
+              src="/About-Us/icon-smile.svg"
+              alt="Smiling icon for UENI pronunciation"
+              className="h-10 w-10"
+            />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
