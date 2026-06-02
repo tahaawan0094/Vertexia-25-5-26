@@ -43,6 +43,46 @@ export default function AboutUsPage() {
           </h2>
         </div>
       </section>
+
+      <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-center text-[2.75rem] font-body font-semibold leading-[1.02] tracking-[-0.03em] text-[#0f172a] sm:text-[3.5rem]">
+            What is VERTEXIA?
+          </h2>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <div className="rounded-[32px] bg-[#f8fafc] p-8 shadow-[0_20px_50px_rgba(15,23,42,0.06)]">
+              <p className="text-[1.35rem] font-body font-semibold text-[#1d4ed8]">#01</p>
+              <p className="mt-6 text-base leading-7 text-[#0f172a]">
+                The team that will build your business website in 7 days for under $200.
+              </p>
+            </div>
+
+            <div className="rounded-[32px] bg-[#f8fafc] p-8 shadow-[0_20px_50px_rgba(15,23,42,0.06)]">
+              <p className="text-[1.35rem] font-body font-semibold text-[#1d4ed8]">#02</p>
+              <p className="mt-6 text-base leading-7 text-[#0f172a]">
+                The easiest way to get a website and marketing done for your small business.
+              </p>
+            </div>
+
+            <div className="rounded-[32px] bg-[#f8fafc] p-8 shadow-[0_20px_50px_rgba(15,23,42,0.06)]">
+              <p className="text-[1.35rem] font-body font-semibold text-[#1d4ed8]">#03</p>
+              <p className="mt-6 text-base leading-7 text-[#0f172a]">
+                The solution to “the website problem”.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-20 text-center">
+            <h3 className="text-[2.5rem] font-body font-semibold leading-[1.02] tracking-[-0.03em] text-[#0f172a] sm:text-[3rem]">
+              What’s the website problem?
+            </h3>
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#475569]">
+              When business owners don’t launch a website or live with a website that doesn’t work simply because getting a website is just too hard, too expensive or too time consuming.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
