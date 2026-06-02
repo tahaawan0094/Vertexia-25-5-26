@@ -45,6 +45,100 @@ export default function AboutUsPage() {
         </div>
       </section>
 
+      <section className="bg-[#eff8ff] px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-center text-[2.75rem] font-body font-semibold leading-[1.02] tracking-[-0.03em] text-[#0f172a] sm:text-[3.5rem]">
+            Who is VERTEXIA?
+          </h2>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <article className="rounded-[32px] bg-white p-8 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
+              <div className="mx-auto mb-6 h-[180px] w-[180px] overflow-hidden rounded-[32px] bg-[#f8fafc]">
+                <img
+                  src="/About-Us/who%20is%20section/company-overview-of-vertexia.png"
+                  alt="Company overview of Vertexia providing web development, ecommerce, and digital growth services"
+                  title="company-overview-of-vertexia"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <p className="text-lg font-semibold text-[#0f172a]">
+                A team of 120 professionals
+              </p>
+            </article>
+
+            <article className="rounded-[32px] bg-white p-8 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
+              <div className="mx-auto mb-6 h-[180px] w-[180px] overflow-hidden rounded-[32px] bg-[#f8fafc]">
+                <img
+                  src="/About-Us/who%20is%20section/about-vertexia-and-our-digital-expertise.png"
+                  alt="About Vertexia and our expertise in custom website development and organic SEO strategies"
+                  title="about-vertexia-and-our-digital-expertise"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <p className="text-lg font-semibold text-[#0f172a]">
+                across the Pakistan,United States, United Kingdom and UAE
+              </p>
+            </article>
+
+            <article className="rounded-[32px] bg-white p-8 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
+              <div className="mx-auto mb-6 h-[180px] w-[180px] overflow-hidden rounded-[32px] bg-[#f8fafc]">
+                <img
+                  src="/About-Us/who%20is%20section/small-business-website-solutions-by-vertexia.png"
+                  alt="Small business website solutions designed to help companies establish a strong online presence"
+                  title="small-business-website-solutions-by-vertexia"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <p className="text-lg font-semibold text-[#0f172a]">
+                helping small businesses get online for over a decade.
+              </p>
+            </article>
+
+            <article className="rounded-[32px] bg-white p-8 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
+              <div className="mx-auto mb-6 h-[180px] w-[180px] overflow-hidden rounded-[32px] bg-[#f8fafc]">
+                <img
+                  src="/About-Us/who%20is%20section/about-the-company-behind-vertexia.png"
+                  alt="About the company Vertexia and its commitment to creating high-performance business websites"
+                  title="about-the-company-behind-vertexia"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <p className="text-lg font-semibold text-[#0f172a]">
+                Fully remote company (it works for us!)
+              </p>
+            </article>
+
+            <article className="rounded-[32px] bg-white p-8 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
+              <div className="mx-auto mb-6 h-[180px] w-[180px] overflow-hidden rounded-[32px] bg-[#f8fafc]">
+                <img
+                  src="/About-Us/who%20is%20section/what-we-do-for-businesses-online.png"
+                  alt="What we do at Vertexia including website development, SEO optimization, and ecommerce solutions"
+                  title="what-we-do-for-businesses-online"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <p className="text-lg font-semibold text-[#0f172a]">
+                not corporate, not a startup. Things get done quickly, but it’s not a mess.
+              </p>
+            </article>
+
+            <article className="rounded-[32px] bg-white p-8 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
+              <div className="mx-auto mb-6 h-[180px] w-[180px] overflow-hidden rounded-[32px] bg-[#f8fafc]">
+                <img
+                  src="/About-Us/who%20is%20section/our-mission-and-vision-at-vertexia.png"
+                  alt="Our mission and vision focused on helping businesses succeed through modern web solutions"
+                  title="our-mission-and-vision-at-vertexia"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <p className="text-lg font-semibold text-[#0f172a]">
+                Everyone talks to customers, and this keeps us honest.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-center text-[2.75rem] font-body font-semibold leading-[1.02] tracking-[-0.03em] text-[#0f172a] sm:text-[3.5rem]">
