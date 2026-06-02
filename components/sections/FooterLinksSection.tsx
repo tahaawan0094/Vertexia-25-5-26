@@ -1,9 +1,13 @@
 "use client";
 import FadeIn from "@/components/animations/FadeIn";
 
-const productLinks = ["Pricing", "Examples",  "FAQs"];
-const companyLinks = ["About Us", "Careers", "Blog"];
-const accountLinks = [ "Terms & Conditions", "Refund Policy", "Privacy Policy"];
+const productLinks = ["Pricing", "Examples", "FAQs"];
+const companyLinks = [
+  { label: "About Us", href: "/about-us" },
+  { label: "Careers", href: "#" },
+  { label: "Blog", href: "/blogs" },
+];
+const accountLinks = ["Terms & Conditions", "Refund Policy", "Privacy Policy"];
 const compareLinks = ["Vertexia vs GoDaddy", "Vertexia vs Squarespace"];
 
 export default function FooterLinksSection() {
@@ -34,9 +38,9 @@ export default function FooterLinksSection() {
                 </p>
                 <ul className="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 text-[14px] text-white/60 max-[640px]:grid-cols-2">
                   {companyLinks.map((item) => (
-                    <li key={item}>
-                      <a className="hover:text-white transition-colors" href="#">
-                        {item}
+                    <li key={item.label}>
+                      <a className="hover:text-white transition-colors" href={item.href}>
+                        {item.label}
                       </a>
                     </li>
                   ))}
