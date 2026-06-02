@@ -228,6 +228,58 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
+
+      <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-20">
+          <div>
+            <p className="text-sm uppercase tracking-[0.35em] text-[#FF5A4E] font-accent">
+              Why VERTEXIA?
+            </p>
+            <h2 className="mt-4 text-4xl font-display font-bold leading-tight text-[#0f172a] sm:text-5xl">
+              Why VERTEXIA?
+            </h2>
+            <p className="mt-8 max-w-3xl text-lg leading-8 text-[#334155] font-body">
+              VERTEXIA just solves the website problem differently. Most website providers provide the tech and leave you to figure it out. If that doesn’t work for you, you need to find someone to do it for you—but who? For how much? And what happens after it’s built? DIY and expensive web developers just doesn't work for most small business owners.
+            </p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#334155] font-body">
+              So enter VERTEXIA: the easy, affordable, professional website built for any small business owner in a week.
+            </p>
+            <ul className="mt-10 space-y-4 text-lg leading-8 text-[#334155] font-body">
+              <li className="flex items-start gap-3">
+                <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-[#16a34a]" />
+                Professional editing anytime if you want it.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-[#16a34a]" />
+                A personal marketing coach if you need it.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-[#16a34a]" />
+                Tech simple enough to use without training.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-[#16a34a]" />
+                Service that fits every business owner’s budget.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-[#16a34a]" />
+                And happiness guaranteed, or your money back.
+              </li>
+            </ul>
+          </div>
+
+          <div className="mt-10 lg:mt-0">
+            <div className="overflow-hidden rounded-[32px] border border-slate-200 bg-[#f8fafc] shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
+              <img
+                src="/About-Us/company-overview-of-our-web-development-services.webp"
+                alt="Company overview showcasing Vertexia's professional web design and development services"
+                title="company-overview-of-our-web-development-services"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
