@@ -178,6 +178,56 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
+
+      <section className="bg-[#eff8ff] px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-center text-[2.75rem] font-body font-semibold leading-[1.02] tracking-[-0.03em] text-[#0f172a] sm:text-[3.5rem]">
+                Built from a wide mix of cultures, perspectives, and stories.
+          </h2>
+
+          <div className="mt-12 grid gap-6 xl:grid-cols-3">
+            <article className="rounded-[32px] bg-white p-6 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
+              <div className="mx-auto mb-6 h-[250px] w-full overflow-hidden rounded-[32px] bg-slate-100">
+                <img
+                  src="/pics/1.png"
+                  alt="Christine Telyan portrait"
+                  title="Christine Telyan"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-[#0f172a]">Taha Awan</h3>
+              <p className="mt-4 text-base leading-7 text-[#475569]">
+                CEO & Co-founder. Relentless. Curious. Focused on making good things happen.
+              </p>
+            </article>
+
+            <article className="rounded-[32px] bg-white p-6 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
+              <div className="mx-auto mb-6 h-[250px] w-full overflow-hidden rounded-[32px] bg-slate-100">
+                <img
+                  src="/1.png"
+                  alt="Anh Pham Vu portrait"
+                  title="Anh Pham Vu"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-[#0f172a]">M.Aamar</h3>
+              <p className="mt-4 text-base leading-7 text-[#475569]">
+                Co-Founder. Speaks 12 languages. Strategic thinker with high standards. Big-hearted.
+              </p>
+            </article>
+
+            <article className="rounded-[32px] bg-white p-6 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
+              <div className="mx-auto mb-6 flex h-[250px] w-full items-center justify-center rounded-[32px] bg-[#dbeafe] text-[#1d4ed8]">
+                <span className="text-[3rem] font-semibold">?</span>
+              </div>
+              <h3 className="text-xl font-semibold text-[#0f172a]">And you?</h3>
+              <p className="mt-4 text-base leading-7 text-[#475569]">
+                Many VERTEXIA lifers have been with us since the beginning and made VERTEXIA what it is today.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
