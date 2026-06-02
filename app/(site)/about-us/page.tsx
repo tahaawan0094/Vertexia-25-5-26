@@ -28,7 +28,8 @@ export default function AboutUsPage() {
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-[#050505] p-4 shadow-[0_40px_120px_rgba(0,0,0,0.4)]">
             <img
               src="/About-Us/about-vertexia-building-websites-that-drive-growth.webp"
-              alt="About Vertexia - building websites that drive growth"
+              alt="About Vertexia web development company helping businesses grow with custom websites and SEO solutions"
+              title="about-vertexia-building-websites-that-drive-growth"
               className="w-full rounded-[28px] object-cover"
             />
           </div>
