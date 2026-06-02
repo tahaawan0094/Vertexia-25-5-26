@@ -6,8 +6,13 @@ const companyLinks = [
   { label: "About Us", href: "/about-us" },
   { label: "Careers", href: "#" },
   { label: "Blog", href: "/blogs" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
 ];
-const accountLinks = ["Terms & Conditions", "Refund Policy", "Privacy Policy"];
+const accountLinks = [
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Refund Policy", href: "#" },
+  { label: "Privacy Policy", href: "#" },
+];
 const compareLinks = ["Vertexia vs GoDaddy", "Vertexia vs Squarespace"];
 
 export default function FooterLinksSection() {
@@ -53,9 +58,9 @@ export default function FooterLinksSection() {
                 </p>
                 <ul className="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 text-[14px] text-white/60 max-[640px]:grid-cols-2">
                   {accountLinks.map((item) => (
-                    <li key={item}>
-                      <a className="hover:text-white transition-colors" href="#">
-                        {item}
+                    <li key={item.label}>
+                      <a className="hover:text-white transition-colors" href={item.href}>
+                        {item.label}
                       </a>
                     </li>
                   ))}
