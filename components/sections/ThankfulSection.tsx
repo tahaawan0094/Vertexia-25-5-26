@@ -93,12 +93,12 @@ export default function ThankfulSection() {
           <p className="mt-6 max-w-[520px] text-lg font-accent font-normal text-white/70">
             The truly affordable done-for-you website solution.
           </p>
-          <button
-            className="mt-10 rounded-[12px] bg-[#FF5A4E] px-12 py-5 text-lg font-medium text-white shadow-[0_12px_26px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,78,0.45)] max-[640px]:w-full max-[640px]:max-w-[320px]"
-            type="button"
+          <a
+            href="/pricing"
+            className="mt-10 inline-flex rounded-[12px] bg-[#FF5A4E] px-12 py-5 text-lg font-medium text-white shadow-[0_12px_26px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,78,0.45)] max-[640px]:w-full max-[640px]:max-w-[320px]"
           >
             Get Started
-          </button>
+          </a>
         </div>
         </FadeIn>
         <div className="relative flex items-center justify-center max-[640px]:mt-20 max-[640px]:h-[500px] max-[640px]:w-full">

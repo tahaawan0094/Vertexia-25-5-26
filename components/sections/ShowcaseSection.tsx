@@ -336,16 +336,6 @@ export default function ShowcaseSection({ hideImages }: { hideImages?: boolean }
               />
             )}
           </div>
-
-          {/* CTA Section */}
-          <div className="mt-16 flex justify-center">
-            <a
-              href="#"
-              className="inline-block rounded-[10px] bg-[#FF5A4E] px-8 py-4 font-semibold text-white shadow-[0_10px_30px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_34px_rgba(255,90,78,0.42)]"
-            >
-              Read Our Story
-            </a>
-          </div>
         </div>
       </div>
     </section>

@@ -79,11 +79,12 @@ export default function ProfessionalWebSection({
             </p>
 
             {/* BUTTON */}
-            <button
-              className={`mt-10 rounded-[12px] bg-[#FF5A4E] text-base font-medium text-white shadow-[0_12px_26px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,78,0.45)]
+            <a
+              href="/pricing"
+              className={`mt-10 inline-flex rounded-[12px] bg-[#FF5A4E] text-base font-medium text-white shadow-[0_12px_26px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,78,0.45)]
               ${
                 centered
-                  ? "flex items-center justify-center px-10 py-4"
+                  ? "items-center justify-center px-10 py-4"
                   : "px-10 py-4"
               }
               max-[640px]:w-full
@@ -91,10 +92,9 @@ export default function ProfessionalWebSection({
               max-[640px]:px-12
               max-[640px]:py-5
               max-[640px]:text-lg`}
-              type="button"
             >
               Get Started
-            </button>
+            </a>
 
           </div>
 

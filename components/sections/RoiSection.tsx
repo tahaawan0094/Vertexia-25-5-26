@@ -89,12 +89,12 @@ export default function RoiSection() {
               <div className="mt-6 text-[64px] font-semibold">
                 ${totalRoi.toLocaleString()}
               </div>
-              <button
-                className="mt-6 w-full rounded-[10px] bg-[#FF5A4E] px-6 py-3 text-base font-semibold text-white shadow-[0_12px_26px_rgba(255,90,78,0.35)]"
-                type="button"
+              <a
+                href="/pricing"
+                className="mt-6 inline-flex w-full justify-center rounded-[10px] bg-[#FF5A4E] px-6 py-3 text-base font-semibold text-white shadow-[0_12px_26px_rgba(255,90,78,0.35)]"
               >
                 Get Vertexia
-              </button>
+              </a>
 
               <div className="mt-6 border-t border-white/10 pt-6 text-sm text-white/70">
                 <p className="mb-4 text-base font-semibold text-white">

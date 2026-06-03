@@ -40,12 +40,12 @@ export default function HeroSection() {
         </StaggerItem>
         <StaggerItem>
           <div className="mb-10 flex flex-wrap items-center justify-center gap-6">
-            <button
-              className="rounded-[10px] bg-[#FF5A4E] px-8 py-4 text-base font-semibold text-white shadow-[0_10px_30px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_34px_rgba(255,90,78,0.42)] max-[640px]:w-full max-[640px]:px-10 max-[640px]:py-5 max-[640px]:text-lg max-[420px]:px-6"
-              type="button"
+            <a
+              href="/pricing"
+              className="inline-block rounded-[10px] bg-[#FF5A4E] px-8 py-4 text-base font-semibold text-white shadow-[0_10px_30px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_34px_rgba(255,90,78,0.42)] max-[640px]:w-full max-[640px]:px-10 max-[640px]:py-5 max-[640px]:text-lg max-[420px]:px-6"
             >
               Get Started
-            </button>
+            </a>
             <a
               className="relative font-medium text-white after:absolute after:left-0 after:right-0 after:top-full after:mt-1.5 after:h-[2px] after:bg-white/40 after:content-[''] max-[640px]:text-lg max-[420px]:text-sm"
               href="#"

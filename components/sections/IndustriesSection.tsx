@@ -82,12 +82,12 @@ export default function IndustriesSection() {
                     </span>
                     <span className="h-px flex-1 bg-white/40 max-[640px]:hidden" />
                   </div>
-                  <button
-                    className="rounded-[10px] bg-[#FF5A4E] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_26px_rgba(255,90,78,0.35)] transition group-hover:-translate-y-0.5"
-                    type="button"
+                  <a
+                    href="/pricing"
+                    className="inline-flex rounded-[10px] bg-[#FF5A4E] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_26px_rgba(255,90,78,0.35)] transition group-hover:-translate-y-0.5"
                   >
                     Get a site like this
-                  </button>
+                  </a>
                 </div>
               </div>
               <p className="mt-3 text-sm text-white/60">{card.title}</p>

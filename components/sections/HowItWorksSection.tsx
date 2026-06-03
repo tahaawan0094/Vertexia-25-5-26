@@ -87,7 +87,7 @@ export default function HowItWorksSection({
           {showButton && (
             <div className="mt-14 flex justify-center">
               <a
-                href="#"
+                href="/pricing"
                 className="inline-flex min-w-[220px] justify-center rounded-[16px] bg-[#FF5A4E] px-20 py-4 text-xl font-semibold text-white shadow-[0_20px_60px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:bg-[#ff6f58]"
               >
                 Get Started

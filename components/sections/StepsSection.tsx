@@ -63,12 +63,12 @@ export default function StepsSection() {
         </StaggerContainer>
 
         <FadeIn delay={0.4} className="mt-16 flex justify-center">
-          <button
-            className="rounded-[12px] bg-[#FF5A4E] px-10 py-4 text-base font-medium text-white shadow-[0_12px_26px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,78,0.45)] max-[640px]:px-12 max-[640px]:py-5 max-[640px]:text-lg max-[640px]:w-full max-[640px]:max-w-[320px]"
-            type="button"
+          <a
+            href="/pricing"
+            className="inline-flex rounded-[12px] bg-[#FF5A4E] px-10 py-4 text-base font-medium text-white shadow-[0_12px_26px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,78,0.45)] max-[640px]:px-12 max-[640px]:py-5 max-[640px]:text-lg max-[640px]:w-full max-[640px]:max-w-[320px]"
           >
             Get Started
-          </button>
+          </a>
         </FadeIn>
       </div>
     </section>
