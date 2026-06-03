@@ -62,11 +62,29 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-24 px-4">
-      {/* Background gradient */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[500px] bg-[linear-gradient(180deg,rgba(31,56,255,0.15)_0%,rgba(8,8,8,0)_100%)]" />
+    <section className="relative bg-[radial-gradient(70%_120%_at_50%_-10%,rgba(31,56,255,0.35)_0%,rgba(31,56,255,0)_62%),radial-gradient(68%_58%_at_50%_62%,rgba(31,56,255,0.55)_0%,rgba(31,56,255,0)_72%),linear-gradient(180deg,#020a4b_0%,#031057_42%,#0a25e8_62%,#050a54_82%,#01030b_100%)]">
+      {/* Contact Header Section */}
+      <div className="relative py-12 px-4">
+        <div className="mx-auto max-w-[1300px] text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 font-display">Contact Us</h1>
+            <div className="flex items-center justify-center gap-3 text-white/80 text-lg font-body">
+              <a href="/" className="hover:text-white transition-colors">Home</a>
+              <span>»</span>
+              <span>Contact</span>
+            </div>
+          </motion.div>
+        </div>
+      </div>
 
-      <StaggerContainer className="relative z-10 mx-auto max-w-[1300px] w-full">
+      {/* Contact Form Section */}
+      <div className="relative min-h-screen flex items-center justify-center py-12 px-4">
+        <StaggerContainer className="relative z-10 mx-auto max-w-[1300px] w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Left Side - Contact Info Card */}
           <StaggerItem>
@@ -90,7 +108,7 @@ export default function ContactForm() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
-                  className="text-4xl md:text-5xl font-bold text-white mb-12"
+                  className="text-4xl md:text-5xl font-bold text-white mb-12 font-display"
                 >
                   Get In Touch
                 </motion.h2>
@@ -154,7 +172,7 @@ export default function ContactForm() {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <div className="mb-8">
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight font-display">
                   Do You Have A Website Design In Mind?
                 </h2>
                 <p className="text-xl text-white mb-2">Bring Your Vision To Life With Us</p>
@@ -193,8 +211,8 @@ export default function ContactForm() {
                         />
                       </svg>
                     </motion.div>
-                    <h3 className="text-gray-800 text-xl font-bold mb-2">Message Sent!</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-gray-800 text-xl font-bold mb-2 font-display">Message Sent!</h3>
+                    <p className="text-gray-600 font-body">
                       Thanks for reaching out. We'll get back to you soon.
                     </p>
                   </motion.div>
@@ -369,7 +387,7 @@ export default function ContactForm() {
                     {isLoading ? (
                       <span className="flex items-center gap-2">
                         <motion.div
-                        className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full"
+                          className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full"
                           animate={{ rotate: 360 }}
                           transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                         />
@@ -385,6 +403,7 @@ export default function ContactForm() {
           </StaggerItem>
         </div>
       </StaggerContainer>
+      </div>
     </section>
   );
 }
