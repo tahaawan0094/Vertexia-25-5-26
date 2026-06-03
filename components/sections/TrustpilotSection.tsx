@@ -3,19 +3,19 @@ import FadeIn from "@/components/animations/FadeIn";
 
 export default function TrustpilotSection() {
   return (
-    <section className="relative overflow-hidden bg-[#000] bg-[radial-gradient(circle_at_0_100%,#080808,#9dd569_0%,#0c593b_39%,#080808_74%,#080808)] px-18 pb-28 pt-24 text-white">
+    <section className="relative overflow-hidden bg-[#000] bg-[radial-gradient(circle_at_0_100%,#080808,#9dd569_0%,#0c593b_39%,#080808_74%,#080808)] px-6 pb-28 pt-24 text-white">
 
       <img
         src="/images%208/65baa0e47a71efc583902bc2_detail_blocks_white_left.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-0 left-0 w-[180px] opacity-60"
+        className="pointer-events-none absolute bottom-0 left-0 w-[min(180px,40vw)] opacity-60"
       />
       <img
         src="/images%208/65baa0e396987128cbe64b76_detail_blocks_white_right.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute right-0 top-0 w-[180px] opacity-60"
+        className="pointer-events-none absolute right-0 top-0 w-[min(180px,40vw)] opacity-60"
       />
 
       <FadeIn>

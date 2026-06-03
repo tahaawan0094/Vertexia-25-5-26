@@ -19,7 +19,7 @@ export default function AboutUsPage() {
             <p className="text-sm uppercase tracking-[0.35em] text-[#FF5A4E] font-accent">
               About Vertexia
             </p>
-            <h1 className="mt-6 text-4xl font-bold leading-tight sm:text-5xl font-display">
+            <h1 className="mt-6 text-2xl md:text-4xl lg:text-5xl font-bold leading-tight font-display max-[640px]:text-xl">
               Let’s Get Every Small Business Online
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75 font-accent">
@@ -45,7 +45,7 @@ export default function AboutUsPage() {
       <section className="relative overflow-hidden bg-gradient-to-r from-[#0028c8] via-[#0038f0] to-[#4b8dff] px-4 py-28 sm:px-6 lg:px-8">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.18),_transparent_35%)] opacity-70" />
         <div className="relative mx-auto max-w-[1180px]">
-          <h2 className="text-left text-[56px] font-body font-medium leading-[73px] tracking-[-0.03em] text-white sm:text-[56px] md:text-[56px]">
+          <h2 className="text-left text-[clamp(2rem,5vw,3.5rem)] font-body font-medium leading-tight tracking-[-0.03em] text-white">
             Every day we are asked simple but important questions about VERTEXIA. So what better way to tell you about us than to answer them.
           </h2>
         </div>
@@ -53,7 +53,7 @@ export default function AboutUsPage() {
 
       <section className="bg-[#eff8ff] px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-center text-[2.75rem] font-body font-semibold leading-[1.02] tracking-[-0.03em] text-[#0f172a] sm:text-[3.5rem]">
+          <h2 className="text-center text-[clamp(1.75rem,4vw,2.25rem)] font-body font-semibold leading-[1.02] tracking-[-0.03em] text-[#0f172a]">
             Who is VERTEXIA?
           </h2>
 

@@ -81,7 +81,7 @@ export default function RoiSection() {
           </div>
 
           <div>
-            <div className="rounded-[20px] bg-[#141414] p-8 text-white shadow-[0_30px_60px_rgba(0,0,0,0.35)]">
+            <div className="rounded-[20px] bg-[#141414] p-8 max-[640px]:p-4 text-white shadow-[0_30px_60px_rgba(0,0,0,0.35)]">
               <p className="text-lg font-medium text-white/80">
                 Return on Investment
                 <span className="block">Every Month with Vertexia</span>

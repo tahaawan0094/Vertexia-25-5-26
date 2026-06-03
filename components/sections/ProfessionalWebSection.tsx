@@ -15,7 +15,7 @@ export default function ProfessionalWebSection({
         src="/images%209/66030a8f80bb3baa5b0aaa1b_detail-mkt-right.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute right-0 top-0 w-[220px] opacity-50"
+        className="pointer-events-none absolute right-0 top-0 w-[min(220px,80vw)] opacity-50"
       />
 
       <FadeIn>

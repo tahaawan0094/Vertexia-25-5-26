@@ -44,11 +44,11 @@ export default function IndustriesSection() {
           served.
         </p>
 
-        <div className="mt-12 flex flex-wrap justify-center gap-4">
+        <div className="mt-12 flex flex-wrap justify-center gap-3 max-[640px]:gap-2">
           {categories.map((category, index) => (
             <span
               key={category}
-              className={`rounded-[10px] px-5 py-3 text-sm font-semibold shadow-[0_10px_25px_rgba(0,0,0,0.25)] ${
+              className={`rounded-[10px] px-5 py-3 text-sm font-semibold shadow-[0_10px_25px_rgba(0,0,0,0.25)] max-[640px]:px-3 max-[640px]:py-2 max-[640px]:text-xs ${
                 index === 0
                   ? "bg-[#15157a] text-white"
                   : "bg-[#cfe6ff] text-[#1d6bff]"
@@ -70,7 +70,7 @@ export default function IndustriesSection() {
                   className="absolute inset-0 h-full w-full scale-[1.08] object-cover blur-[1px]"
                 />
                 <div className="absolute inset-0 bg-black/55" />
-                <div className="relative z-10 flex h-full items-center justify-between gap-6 px-10 max-[640px]:flex-col max-[640px]:items-start max-[640px]:justify-center">
+                <div className="relative z-10 flex h-full items-center justify-between gap-6 px-10 max-[640px]:gap-3 max-[640px]:px-4 max-[640px]:flex-col max-[640px]:items-start max-[640px]:justify-center">
                   <div className="flex items-center gap-3 text-white/85">
                     <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/40">
                       <svg viewBox="0 0 24 24" className="h-4 w-4 fill-white">

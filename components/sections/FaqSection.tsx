@@ -140,11 +140,11 @@ export default function FaqSection() {
               return (
                 <div
                   key={item.question}
-                  className="rounded-[24px] border border-white/10 bg-[#151515] px-9 py-6 text-left text-white transition hover:border-white/20 hover:bg-[#1b1b1b]"
+                  className="rounded-[24px] border border-white/10 bg-[#151515] px-9 py-6 max-[640px]:px-4 max-[640px]:py-3 text-left text-white transition hover:border-white/20 hover:bg-[#1b1b1b]"
                 >
                   <button
                     type="button"
-                    className="flex w-full items-center justify-between text-left text-[20px] font-medium"
+                    className="flex w-full items-center justify-between text-left text-[20px] font-medium max-[640px]:text-[16px]"
                     aria-expanded={isOpen}
                     onClick={() => setOpenIndex(isOpen ? null : index)}
                   >

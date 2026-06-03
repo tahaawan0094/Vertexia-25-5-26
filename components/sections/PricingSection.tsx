@@ -9,7 +9,7 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="relative overflow-visible min-h-screen flex flex-col items-center justify-center pt-24 pb-24 px-4 text-center max-[640px]:pb-16 max-[640px]:pt-20"
+      className="relative overflow-visible flex flex-col items-center justify-center pt-24 pb-24 px-4 text-center max-[640px]:pb-16 max-[640px]:pt-20"
     >
       {/* Background gradient matching hero section */}
       <div
@@ -104,7 +104,7 @@ export default function PricingSection() {
         <StaggerItem>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 max-w-6xl mx-auto">
             {/* Card 1 - Growth */}
-            <div className="relative bg-white rounded-3xl p-8 flex flex-col">
+            <div className="relative bg-white rounded-3xl p-8 max-[640px]:p-4 flex flex-col">
               <div className="flex flex-col items-center mb-6">
                 <img
                   src="/Pricing page  images/card-icon-1.svg"
@@ -166,7 +166,7 @@ export default function PricingSection() {
             </div>
 
             {/* Card 2 - Plus */}
-            <div className="relative bg-white rounded-3xl p-8 flex flex-col">
+            <div className="relative bg-white rounded-3xl p-8 max-[640px]:p-4 flex flex-col">
               <div className="flex justify-center mb-6">
                 <span className="bg-blue-100 text-blue-600 text-xs font-semibold px-3 py-1 rounded-full">
                   MOST POPULAR
@@ -234,7 +234,7 @@ export default function PricingSection() {
             </div>
 
             {/* Card 3 - Website Launch */}
-            <div className="relative bg-white rounded-3xl p-8 flex flex-col">
+            <div className="relative bg-white rounded-3xl p-8 max-[640px]:p-4 flex flex-col">
               <div className="flex flex-col items-center mb-6">
                 <img
                   src="/Pricing page  images/card-icon-3.svg"

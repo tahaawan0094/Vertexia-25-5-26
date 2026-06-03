@@ -72,7 +72,7 @@ export default function ContactForm() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 font-display">Contact Us</h1>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-display max-[640px]:text-3xl">Contact Us</h1>
             <div className="flex items-center justify-center gap-3 text-white/80 text-lg font-body">
               <a href="/" className="hover:text-white transition-colors">Home</a>
               <span>»</span>
@@ -108,7 +108,7 @@ export default function ContactForm() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
-                  className="text-4xl md:text-5xl font-bold text-white mb-12 font-display"
+                  className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12 font-display max-[640px]:text-2xl"
                 >
                   Get In Touch
                 </motion.h2>
@@ -172,11 +172,11 @@ export default function ContactForm() {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <div className="mb-8">
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight font-display">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight font-display max-[640px]:text-2xl">
                   Do You Have A Website Design In Mind?
                 </h2>
-                <p className="text-xl text-white mb-2">Bring Your Vision To Life With Us</p>
-                <p className="text-white/70">
+                <p className="text-lg md:text-xl text-white mb-2 max-[640px]:text-base">Bring Your Vision To Life With Us</p>
+                <p className="text-white/70 max-[640px]:text-sm">
                   Visit us or send a message to consult with our Representative.
                 </p>
               </div>

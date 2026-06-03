@@ -171,7 +171,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <div className="flex flex-1 items-center justify-center gap-12 max-[1150px]:hidden">
+        <div className="flex flex-1 items-center justify-center gap-12 max-[1024px]:hidden">
           {navLinks.map((link) => (
             <div
               key={link.label}
@@ -267,7 +267,7 @@ export default function Navbar() {
             </a>
 
             <button
-              className="hidden text-white transition hover:text-white/70 max-[1150px]:inline-flex"
+              className="hidden text-white transition hover:text-white/70 max-[1024px]:inline-flex"
               type="button"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
@@ -293,7 +293,7 @@ export default function Navbar() {
             transition={{ duration: 0.2 }}
             className="absolute inset-x-0 top-full z-40 border-t border-white/10 bg-[#050505] shadow-2xl"
           >
-            <div className="mx-auto flex w-full flex-col gap-2 px-4 py-3 text-white md:hidden max-[425px]:gap-1 max-[425px]:px-2 max-[425px]:py-2">
+            <div className="mx-auto flex w-full flex-col gap-2 px-4 py-3 text-white max-[1024px]:flex hidden max-[425px]:gap-1 max-[425px]:px-2 max-[425px]:py-2">
               {navLinks.map((link) => (
                 <div key={link.label} className="space-y-1">
                   <a

@@ -23,7 +23,7 @@ export default function AlternativesSection() {
                 />
               </div>
             </div>
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="relative flex justify-center lg:justify-end overflow-hidden">
               <img
                 src="/images%202/futuristic-ui-responsive-web-design.webp"
                 alt="Futuristic responsive website design"
@@ -45,7 +45,7 @@ export default function AlternativesSection() {
           </div>
 
           <div className="grid items-center gap-14 lg:grid-cols-[1fr_1.05fr] max-[640px]:flex max-[640px]:flex-col">
-            <div className="relative flex justify-center lg:justify-start">
+            <div className="relative flex justify-center lg:justify-start overflow-hidden">
               <img
                 src="/images%202/seo-optimized-custom-website-development.webp"
                 alt="SEO optimized custom website development"

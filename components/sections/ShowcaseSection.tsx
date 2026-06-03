@@ -90,7 +90,7 @@ export default function ShowcaseSection({ hideImages }: { hideImages?: boolean }
       />
       <div className="relative z-10 flex justify-center px-5 max-[640px]:px-0">
         {/* Desktop View */}
-        <div className="relative hidden aspect-[1226/652] w-[min(1226px,94vw)] drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)] min-[961px]:block">
+        <div className="relative hidden aspect-[1226/652] w-[min(1226px,94vw)] drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)] min-[960px]:block">
           {!hideImages && (
             <img
               className="relative z-0 h-full w-full rounded-[18px]"
