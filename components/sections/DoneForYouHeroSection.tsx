@@ -37,7 +37,7 @@ export default function DoneForYouHeroSection() {
         </div>
 
         <a
-          href="#"
+          href="/pricing"
           className="inline-flex min-w-[220px] justify-center rounded-[16px] bg-[#ff5a4e] px-20 py-4 text-xl font-semibold text-white shadow-[0_20px_60px_rgba(255,90,78,0.35)] transition hover:-translate-y-0.5 hover:bg-[#ff6f58] max-[640px]:min-w-[200px] max-[640px]:px-18 max-[640px]:py-5 max-[640px]:text-2xl"
         >
           Get 87% off
