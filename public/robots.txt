@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://vertexiaio.vercel.app
+
+# Sitemaps
+Sitemap: https://vertexiaio.vercel.app/sitemap.xml

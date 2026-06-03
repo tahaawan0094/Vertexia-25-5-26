@@ -21,7 +21,7 @@ export default function DoneForYouWebsitePage() {
     <main className="site bg-black">
       <DoneForYouHeroSection />
 
-      <section className="bg-[#000] pt-10 pb-10 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#000] pt-10 pb-10 px-4 sm:px-6 lg:px-8 max-[640px]:pt-6 max-[640px]:pb-6">
         <DoneForYouTable />
       </section>
 
@@ -29,7 +29,7 @@ export default function DoneForYouWebsitePage() {
       <HowItWorksSection showButton />
 
       {/* Comparison Table Section */}
-      <section className="bg-black px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-black px-4 py-20 sm:px-6 lg:px-8 max-[640px]:py-12">
         <style>{`
           @keyframes movingLight {
             0% {
@@ -110,16 +110,50 @@ export default function DoneForYouWebsitePage() {
           .animated-table-border table {
             background: black;
           }
+
+          /* Mobile table styles */
+          @media (max-width: 768px) {
+            .table-wrapper {
+              overflow-x: auto;
+              -webkit-overflow-scrolling: touch;
+            }
+
+            .table-wrapper table {
+              min-width: 700px;
+            }
+
+            .table-wrapper th,
+            .table-wrapper td {
+              padding: 12px 8px !important;
+              font-size: 13px;
+            }
+
+            .table-wrapper thead tr th:first-child {
+              min-width: 140px;
+            }
+          }
+
+          @media (max-width: 640px) {
+            .table-wrapper th,
+            .table-wrapper td {
+              padding: 10px 6px !important;
+              font-size: 11px;
+            }
+
+            .table-wrapper thead tr th:first-child {
+              min-width: 110px;
+            }
+          }
         `}</style>
         <div className="mx-auto max-w-[1200px]">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">What makes Vertexia different?</h2>
-            <p className="text-white/70 text-lg">Say goodbye to DIY builders and web agencies and get the best of both</p>
+          <div className="text-center mb-12 max-[640px]:mb-8">
+            <h2 className="text-4xl font-bold text-white mb-4 max-[768px]:text-3xl max-[640px]:text-2xl max-[640px]:mb-3">What makes Vertexia different?</h2>
+            <p className="text-white/70 text-lg max-[768px]:text-base max-[640px]:text-sm">Say goodbye to DIY builders and web agencies and get the best of both</p>
           </div>
 
           {/* Table */}
           <div className="relative rounded-lg overflow-hidden table-glow-effect">
-            <div className="overflow-x-auto">
+            <div className="table-wrapper">
             <table className="w-full text-white">
               <thead>
                 <tr className="border-b border-white/20">
@@ -207,25 +241,25 @@ export default function DoneForYouWebsitePage() {
           </div>
 
           {/* Features Section */}
-          <div className="mt-20 pt-20 bg-black rounded-lg px-8 py-12 border-t-0">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-white mb-4">What features are included in your Vertexia website?</h2>
-              <p className="text-white/70 text-lg">All the essentials to run a successful website or online store</p>
+          <div className="mt-20 pt-20 bg-black rounded-lg px-8 py-12 border-t-0 max-[768px]:mt-12 max-[768px]:pt-12 max-[768px]:px-6 max-[768px]:py-8 max-[640px]:mt-8 max-[640px]:pt-8 max-[640px]:px-4">
+            <div className="text-center mb-16 max-[768px]:mb-12 max-[640px]:mb-8">
+              <h2 className="text-4xl font-bold text-white mb-4 max-[768px]:text-3xl max-[640px]:text-2xl max-[640px]:mb-3">What features are included in your Vertexia website?</h2>
+              <p className="text-white/70 text-lg max-[768px]:text-base max-[640px]:text-sm">All the essentials to run a successful website or online store</p>
             </div>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-[768px]:gap-6 max-[640px]:gap-4">
               {/* Feature 1 */}
               <div className="group">
-                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                <div className="relative mb-6 overflow-hidden rounded-2xl max-[768px]:mb-4">
                   <img
                     src="/Done-for-you-images/feature-images/custom-fitness-website-design-vertexia-done-for-you-website.webp"
                     alt="Custom fitness website landing page designed by Vertexia featuring a modern gym and wellness theme with bold typography, responsive UI design, vibrant orange and navy color palette, and professional fitness branding for done-for-you website services."
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105 max-[768px]:h-48 max-[640px]:h-40"
                     loading="lazy"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">Done-for-you website design & copy</h3>
+                <h3 className="text-xl font-semibold text-white mb-3 max-[768px]:text-lg max-[768px]:mb-2 max-[640px]:text-base">Done-for-you website design & copy</h3>
                 <ul className="space-y-2 text-white/70 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-green-500 mt-1">✓</span>
@@ -252,15 +286,15 @@ export default function DoneForYouWebsitePage() {
 
               {/* Feature 2 */}
               <div className="group">
-                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                <div className="relative mb-6 overflow-hidden rounded-2xl max-[768px]:mb-4">
                   <img
                     src="/Done-for-you-images/feature-images/modern-product-showcase-ui-design-vertexia-done-for-you-website.webp"
                     alt="Modern ecommerce product showcase interface designed by Vertexia featuring a minimalist candle product layout, glassmorphism UI elements, responsive web design, secure domain display, and premium done-for-you website styling for online brands."
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105 max-[768px]:h-48 max-[640px]:h-40"
                     loading="lazy"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">Custom domain name & professional email</h3>
+                <h3 className="text-xl font-semibold text-white mb-3 max-[768px]:text-lg max-[768px]:mb-2 max-[640px]:text-base">Custom domain name & professional email</h3>
                 <ul className="space-y-2 text-white/70 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-green-500 mt-1">✓</span>
@@ -283,15 +317,15 @@ export default function DoneForYouWebsitePage() {
 
               {/* Feature 3 */}
               <div className="group">
-                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                <div className="relative mb-6 overflow-hidden rounded-2xl max-[768px]:mb-4">
                   <img
                     src="/Done-for-you-images/feature-images/creative-mobile-app-ui-design-vertexia-done-for-you-websi.webp"
                     alt="Modern mobile app UI concept designed by Vertexia featuring a creative profile editor interface, custom color palette controls, premium typography elements, and responsive app design visuals for done-for-you website and brand"
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105 max-[768px]:h-48 max-[640px]:h-40"
                     loading="lazy"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">Easy-to-use editor & unlimited edits done by us</h3>
+                <h3 className="text-xl font-semibold text-white mb-3 max-[768px]:text-lg max-[768px]:mb-2 max-[640px]:text-base">Easy-to-use editor & unlimited edits done by us</h3>
                 <ul className="space-y-2 text-white/70 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-green-500 mt-1">✓</span>
@@ -314,15 +348,15 @@ export default function DoneForYouWebsitePage() {
 
               {/* Feature 4 */}
               <div className="group">
-                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                <div className="relative mb-6 overflow-hidden rounded-2xl max-[768px]:mb-4">
                   <img
                     src="/Done-for-you-images/feature-images/luxury-fashion-ecommerce-ui-design-vertexia-done-for-you-website.webp"
                     alt="Luxury fashion ecommerce website interface designed by Vertexia featuring a premium shopping cart UI, modern apparel showcase, stylish model photography, responsive ecommerce layout, and conversion-focused done-for-you website design."
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105 max-[768px]:h-48 max-[640px]:h-40"
                     loading="lazy"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">Unlimited sales with 0% commission</h3>
+                <h3 className="text-xl font-semibold text-white mb-3 max-[768px]:text-lg max-[768px]:mb-2 max-[640px]:text-base">Unlimited sales with 0% commission</h3>
                 <ul className="space-y-2 text-white/70 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-green-500 mt-1">✓</span>
@@ -345,15 +379,15 @@ export default function DoneForYouWebsitePage() {
 
               {/* Feature 5 */}
               <div className="group">
-                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                <div className="relative mb-6 overflow-hidden rounded-2xl max-[768px]:mb-4">
                   <img
                     src="/Done-for-you-images/feature-images/modern-restaurant-booking-ui-design-vertexia-done-for-you-website.webp"
                     alt="Modern restaurant reservation website UI designed by Vertexia featuring elegant dining booking interface, premium food showcase, table reservation card, responsive hospitality web design, and conversion-focused done-for-you restaurant website layout."
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105 max-[768px]:h-48 max-[640px]:h-40"
                     loading="lazy"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">Take appointments 24/7/365</h3>
+                <h3 className="text-xl font-semibold text-white mb-3 max-[768px]:text-lg max-[768px]:mb-2 max-[640px]:text-base">Take appointments 24/7/365</h3>
                 <ul className="space-y-2 text-white/70 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-green-500 mt-1">✓</span>
@@ -376,15 +410,15 @@ export default function DoneForYouWebsitePage() {
 
               {/* Feature 6 */}
               <div className="group">
-                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                <div className="relative mb-6 overflow-hidden rounded-2xl max-[768px]:mb-4">
                   <img
                     src="/Done-for-you-images/feature-images/online-coaching-website-ui-design-vertexia-done-for-you-website.webp"
                     alt="Modern online coaching website interface designed by Vertexia featuring live mentor sessions, professional coaching dashboard UI, responsive course platform layout, interactive learning experience, and premium done-for-you website design for coaches and consultants."
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105 max-[768px]:h-48 max-[640px]:h-40"
                     loading="lazy"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">1-to-1 call before website launch</h3>
+                <h3 className="text-xl font-semibold text-white mb-3 max-[768px]:text-lg max-[768px]:mb-2 max-[640px]:text-base">1-to-1 call before website launch</h3>
                 <ul className="space-y-2 text-white/70 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-green-500 mt-1">✓</span>
@@ -409,76 +443,76 @@ export default function DoneForYouWebsitePage() {
           </div>
 
           {/* Pricing Section */}
-          <div className="mt-20 pt-20">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-white mb-4">How much does this website cost?</h2>
-              <p className="text-white/70 text-lg">$599 $79 one-time setup fee to build & launch your website and then $24.99 per month to run your website</p>
+          <div className="mt-20 pt-20 max-[768px]:mt-12 max-[768px]:pt-12 max-[640px]:mt-8 max-[640px]:pt-8">
+            <div className="text-center mb-16 max-[768px]:mb-12 max-[640px]:mb-8">
+              <h2 className="text-4xl font-bold text-white mb-4 max-[768px]:text-3xl max-[640px]:text-2xl max-[640px]:mb-3">How much does this website cost?</h2>
+              <p className="text-white/70 text-lg max-[768px]:text-base max-[640px]:text-sm">$599 $79 one-time setup fee to build & launch your website and then $24.99 per month to run your website</p>
             </div>
 
             {/* Pricing Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-[768px]:gap-6 max-[640px]:gap-4">
               {/* Setup Fee Card */}
               <div className="rounded-lg overflow-hidden bg-[#0a0a0a] border border-white/10">
-                <div className="bg-blue-600 px-6 py-6">
-                  <h3 className="text-2xl font-bold text-white">The $79 one-time setup fee includes:</h3>
+                <div className="bg-blue-600 px-6 py-6 max-[768px]:px-4 max-[768px]:py-4">
+                  <h3 className="text-2xl font-bold text-white max-[768px]:text-xl max-[640px]:text-lg">The $79 one-time setup fee includes:</h3>
                 </div>
-                <div className="p-8 space-y-4">
+                <div className="p-8 space-y-4 max-[768px]:p-6 max-[768px]:space-y-3 max-[640px]:p-4">
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">Fully built multi-page website, easy to edit anytime</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">Fully built multi-page website, easy to edit anytime</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">Personalized design & SEO content</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">Personalized design & SEO content</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">Ecommerce & bookings functionality</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">Ecommerce & bookings functionality</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">Website launched in 1 week</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">Website launched in 1 week</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">1-to-1 launch call to make any changes you need</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">1-to-1 launch call to make any changes you need</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">30 days of unlimited edits by our team</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">30 days of unlimited edits by our team</span>
                   </div>
                 </div>
               </div>
 
               {/* Monthly Fee Card */}
               <div className="rounded-lg overflow-hidden bg-[#0a0a0a] border border-white/10">
-                <div className="bg-blue-600 px-6 py-6">
-                  <h3 className="text-2xl font-bold text-white">The $24.99 monthly fee includes:</h3>
+                <div className="bg-blue-600 px-6 py-6 max-[768px]:px-4 max-[768px]:py-4">
+                  <h3 className="text-2xl font-bold text-white max-[768px]:text-xl max-[640px]:text-lg">The $24.99 monthly fee includes:</h3>
                 </div>
-                <div className="p-8 space-y-4">
+                <div className="p-8 space-y-4 max-[768px]:p-6 max-[768px]:space-y-3 max-[640px]:p-4">
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">Domain name & pro email inbox</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">Domain name & pro email inbox</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">Fast, secure hosting & SSL</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">Fast, secure hosting & SSL</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">Unlimited sales, bookings & leads</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">Unlimited sales, bookings & leads</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">0% fees on any transactions</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">0% fees on any transactions</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">Ongoing platform upgrades</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">Ongoing platform upgrades</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-white">Premium support</span>
+                    <span className="text-green-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-white text-sm max-[768px]:text-xs">Premium support</span>
                   </div>
                 </div>
               </div>
