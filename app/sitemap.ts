@@ -45,6 +45,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: "https://vertexiaio.vercel.app/refund-policy",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
       url: "https://vertexiaio.vercel.app/faqs",
       lastModified: new Date(),
       changeFrequency: "monthly",

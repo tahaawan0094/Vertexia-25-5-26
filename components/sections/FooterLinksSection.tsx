@@ -15,7 +15,7 @@ const companyLinks = [
 ];
 const accountLinks = [
   { label: "Terms & Conditions", href: "/terms-and-conditions" },
-  { label: "Refund Policy", href: "#" },
+  { label: "Refund Policy", href: "/refund-policy" },
   { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 const compareLinks = ["Vertexia vs GoDaddy", "Vertexia vs Squarespace"];
