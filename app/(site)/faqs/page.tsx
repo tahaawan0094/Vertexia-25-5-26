@@ -82,7 +82,7 @@ const faqItems: FAQItem[] = [
   }
 ];
 
-export default function FAQPage() {
+function FAQPage() {
   const [openId, setOpenId] = useState<number | null>(null);
 
   const additionalFaqItems: FAQItem[] = [
@@ -429,3 +429,5 @@ export default function FAQPage() {
     </main>
   );
 }
+
+export default FAQPage;
