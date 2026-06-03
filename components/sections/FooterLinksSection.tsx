@@ -10,6 +10,7 @@ const companyLinks = [
   { label: "About Us", href: "/about-us" },
   { label: "Careers", href: "#" },
   { label: "Blog", href: "/blogs" },
+  { label: "Contact", href: "/contact" },
   { label: "Terms & Conditions", href: "/terms-and-conditions" },
 ];
 const accountLinks = [
