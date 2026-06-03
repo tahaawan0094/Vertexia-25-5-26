@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import Link from "next/link";
 import DoneForYouHeroSection from "@/components/sections/DoneForYouHeroSection";
 import DoneForYouTable from "@/components/sections/DoneForYouTable";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
@@ -5,10 +7,13 @@ import FaqSection from "@/components/sections/FaqSection";
 import ProfessionalWebSection from "@/components/sections/ProfessionalWebSection";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Done For You Website Service | Vertexia",
   description:
     "Complete website design and development service handled from start to finish.",
+  alternates: {
+    canonical: "https://vertexiaio.vercel.app/done-for-you-website",
+  },
 };
 
 export default function DoneForYouWebsitePage() {

@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "About Vertexia | Building Websites That Drive Growth",
   description:
     "Learn about Vertexia, our mission, and how we build fast, SEO-friendly websites that help businesses grow online.",
+  alternates: {
+    canonical: "https://vertexiaio.vercel.app/about-us",
+  },
 };
 
 export default function AboutUsPage() {

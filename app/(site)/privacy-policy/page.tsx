@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Privacy Policy | Vertexia",
   description:
     "Vertexia Privacy Policy describing how we collect, use, store, and protect personal information.",
+  alternates: {
+    canonical: "https://vertexiaio.vercel.app/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyPage() {

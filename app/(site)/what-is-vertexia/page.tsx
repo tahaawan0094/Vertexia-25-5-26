@@ -9,6 +9,9 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
 export const metadata: Metadata = {
   title: "What is Vertexia? | A Modern Web Development & SEO Growth Partner",
   description: "Discover what Vertexia is, how it helps businesses build high-performance websites, improve online visibility, and create scalable digital growth systems designed for long-term success.",
+  alternates: {
+    canonical: "https://vertexiaio.vercel.app/what-is-vertexia",
+  },
   openGraph: {
     title: "What is Vertexia? | A Modern Web Development & SEO Growth Partner",
     description: "Discover what Vertexia is, how it helps businesses build high-performance websites, improve online visibility, and create scalable digital growth systems designed for long-term success.",
@@ -131,7 +134,7 @@ export default function WhatIsVertexia() {
               description="A split-screen comparison illustration showing the difference between outdated template-based websites and modern custom web development focused on speed, SEO, scalability, and user experience."
             />
             <p className="text-lg leading-relaxed text-white/80">
-              Vertexia focuses on creating modern, performance-driven websites instead of relying entirely on pre-made templates or heavy plugin systems.
+              Vertexia focuses on creating modern, performance-driven websites instead of relying entirely on pre-made templates or heavy plugin systems. Unlike traditional website builders, we use modern technologies like <a href="https://react.dev" target="_blank" rel="noopener noreferrer" className="text-[#FF5A4E] hover:text-white transition">React</a> and <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-[#FF5A4E] hover:text-white transition">Next.js</a> for superior performance.
             </p>
             <div className="bg-gradient-to-br from-[#111] to-black p-6 md:p-8 rounded-3xl border border-white/10">
               <p className="text-white/60 mb-4 font-semibold uppercase tracking-wider text-sm">The Vertexia Combination:</p>
@@ -155,7 +158,7 @@ export default function WhatIsVertexia() {
               description="A premium website interface mockup displaying responsive web design, modern UI/UX principles, mobile optimization, and clean business-focused layouts designed for digital growth."
             />
             <p className="text-lg leading-relaxed text-white/80">
-              One of the biggest advantages of Vertexia is its focus on modern technologies like React and Next.js. These technologies are widely used by leading global platforms because they offer faster performance, better user experience, and higher scalability.
+              One of the biggest advantages of Vertexia is its focus on modern technologies. These frameworks are widely used by leading global platforms like <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="text-[#FF5A4E] hover:text-white transition">Netflix</a>, <a href="https://www.airbnb.com" target="_blank" rel="noopener noreferrer" className="text-[#FF5A4E] hover:text-white transition">Airbnb</a>, and <a href="https://www.uber.com" target="_blank" rel="noopener noreferrer" className="text-[#FF5A4E] hover:text-white transition">Uber</a> because they offer faster performance, better user experience, and higher scalability.
             </p>
           </div>
 
@@ -169,7 +172,7 @@ export default function WhatIsVertexia() {
               description="A modern website performance illustration showing speed optimization, Core Web Vitals metrics, fast-loading interfaces, and SEO-focused web architecture for improved digital growth."
             />
             <p className="text-lg leading-relaxed text-white/80">
-              Website speed has become one of the most important ranking and conversion factors online. Studies consistently show that users leave websites quickly if pages take too long to load. Vertexia builds websites with performance as a core priority.
+              Website speed has become one of the most important ranking and conversion factors online. <a href="https://www.searchenginejournal.com/google-page-experience-ranking-factor" target="_blank" rel="noopener noreferrer" className="text-[#FF5A4E] hover:text-white transition">Studies consistently show</a> that users leave websites quickly if pages take too long to load. Google's <a href="https://web.dev/vitals" target="_blank" rel="noopener noreferrer" className="text-[#FF5A4E] hover:text-white transition">Core Web Vitals</a> are essential ranking factors. Vertexia builds websites with performance as a core priority.
             </p>
           </div>
 
@@ -183,7 +186,7 @@ export default function WhatIsVertexia() {
               description="A futuristic SEO analytics visualization featuring keyword rankings, website traffic growth, digital performance tracking, and search engine optimization dashboards for modern businesses."
             />
             <p className="text-lg leading-relaxed text-white/80">
-              A properly optimized website should include semantic page structure, optimized metadata, clean URLs, and fast loading speed. Vertexia focuses on building websites with SEO foundations integrated directly into the process.
+              A properly optimized website should include semantic page structure, optimized metadata, clean URLs, and fast loading speed. According to <a href="https://developers.google.com/search" target="_blank" rel="noopener noreferrer" className="text-[#FF5A4E] hover:text-white transition">Google Search Central</a>, technical SEO is critical for online visibility. Vertexia focuses on building websites with SEO foundations integrated directly into the development process.
             </p>
           </div>
 
@@ -223,7 +226,7 @@ export default function WhatIsVertexia() {
               description="A responsive web design illustration showing modern business websites optimized for desktop, tablet, and mobile devices to improve usability and customer engagement."
             />
             <p className="text-lg leading-relaxed text-white/80">
-              A website should not just solve today’s needs. It should support future growth. Vertexia focuses on building websites designed for long-term scalability instead of short-term convenience.
+              A website should not just solve today's needs. It should support future growth. <a href="https://www.w3.org/standards" target="_blank" rel="noopener noreferrer" className="text-[#FF5A4E] hover:text-white transition">Modern web standards</a> ensure your website remains relevant and performant. Vertexia focuses on building websites designed for long-term scalability instead of short-term convenience.
             </p>
           </div>
 
@@ -234,7 +237,7 @@ export default function WhatIsVertexia() {
             </p>
             <div className="mt-12 p-6 md:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-r from-[#FF5A4E] to-[#ff2d20] text-center shadow-2xl shadow-red-500/10">
               <h3 className="text-xl md:text-2xl font-bold mb-4">Ready to grow your business?</h3>
-              <p className="mb-8 opacity-90 text-sm md:text-base">Let's build a high-performance website tailored for your success.</p>
+              <p className="mb-8 opacity-90 text-sm md:text-base">Let's build a high-performance website tailored for your success. Learn more about <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition">web performance best practices</a>.</p>
               <button className="bg-white text-black px-8 md:px-10 py-3 md:py-4 rounded-lg md:rounded-xl font-bold hover:scale-105 transition-transform shadow-lg text-sm md:text-base">
                 Get Started with Vertexia
               </button>

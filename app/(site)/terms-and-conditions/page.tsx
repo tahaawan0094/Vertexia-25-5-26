@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Terms and Conditions | Vertexia",
   description:
     "Vertexia Terms and Conditions governing the use of web development and digital services.",
+  alternates: {
+    canonical: "https://vertexiaio.vercel.app/terms-and-conditions",
+  },
 };
 
 export default function TermsAndConditionsPage() {

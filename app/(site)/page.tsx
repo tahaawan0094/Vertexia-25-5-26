@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import HeroSection from "@/components/sections/HeroSection";
 import ShowcaseSection from "@/components/sections/ShowcaseSection";
 import AlternativesSection from "@/components/sections/AlternativesSection";
@@ -12,6 +13,12 @@ import TrustpilotSection from "@/components/sections/TrustpilotSection";
 import FaqSection from "@/components/sections/FaqSection";
 import ProfessionalWebSection from "@/components/sections/ProfessionalWebSection";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://vertexiaio.vercel.app/",
+  },
+};
 
 export default function HomePage() {
   return (
