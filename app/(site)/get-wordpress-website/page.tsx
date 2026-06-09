@@ -413,15 +413,17 @@ export default function DoneForYouWebsitePage() {
           <div className="mt-20 pt-20">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-white mb-4">How much does this website cost?</h2>
-              <p className="text-white/70 text-lg">$599 $79 one-time setup fee to build & launch your website and then $24.99 per month to run your website</p>
+              <p className="text-white/70 text-lg"> Rs.22,000 one-time setup fee to build & launch your website and then Rs.3,500 per month to run your website</p>
+             
             </div>
 
             {/* Pricing Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Setup Fee Card */}
               <div className="rounded-lg overflow-hidden bg-[#0a0a0a] border border-white/10">
-                <div className="bg-blue-600 px-6 py-6">
-                  <h3 className="text-2xl font-bold text-white">The $79 one-time setup fee includes:</h3>
+                <div className="bg-blue-1000 px-6 py-6">
+                  <h3 className="text-2xl font-bold text-white">The Rs.22,000 one-time setup fee includes:</h3>
+                   <hr className="border-t border-white/20 mt-3" />
                 </div>
                 <div className="p-8 space-y-4">
                   <div className="flex items-start gap-3">
@@ -453,8 +455,9 @@ export default function DoneForYouWebsitePage() {
 
               {/* Monthly Fee Card */}
               <div className="rounded-lg overflow-hidden bg-[#0a0a0a] border border-white/10">
-                <div className="bg-blue-600 px-6 py-6">
-                  <h3 className="text-2xl font-bold text-white">The $24.99 monthly fee includes:</h3>
+                <div className="bg-blue-1000 px-6 py-6">
+                  <h3 className="text-2xl font-bold text-white">The Rs.3,500 monthly fee includes:</h3>
+                   <hr className="border-t border-white/20 mt-3" />
                 </div>
                 <div className="p-8 space-y-4">
                   <div className="flex items-start gap-3">
