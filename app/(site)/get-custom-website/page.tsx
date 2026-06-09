@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function DoneForYouWebsitePage() {
   return (
-    <main className="site">
+    <main className="min-h-screen bg-[radial-gradient(70%_120%_at_50%_-10%,rgba(4,164,75,0.35)_0%,rgba(4,164,75,0)_62%),radial-gradient(68%_58%_at_50%_62%,rgba(2,102,40,0.55)_0%,rgba(2,102,40,0)_72%),linear-gradient(180deg,#023B0F_0%,#046F1D_42%,#04A44B_62%,#023B0F_82%,#010804_100%)]">
       <CustomWebsiteHeroSection />
 
       <section className="pt-10 pb-10 px-4 sm:px-6 lg:px-8">
@@ -196,10 +196,7 @@ export default function DoneForYouWebsitePage() {
                   <td className="text-center py-4 px-6"><svg className="h-5 w-5 text-red-500 mx-auto" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg></td>
                 </tr>
                 <tr>
-                  <td className="py-4 px-6">Biggest frustration</td>
-                  <td className="text-center py-4 px-6 text-sm text-white/70">not finding, us sooner</td>
-                  <td className="text-center py-4 px-6 text-sm text-white/70">hard to use and difficult to launch & site you're happy with</td>
-                  <td className="text-center py-4 px-6 text-sm text-white/70">high cost & hard to maintain since you're dependent</td>
+
                 </tr>
               </tbody>
             </table>
