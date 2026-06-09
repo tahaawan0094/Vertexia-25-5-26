@@ -73,7 +73,7 @@ const navLinks: NavLink[] = [
       },
       {
         label: "FAQs",
-        href: "#faqs",
+        href: "/faqs",
         icon: "help",
       },
       {
