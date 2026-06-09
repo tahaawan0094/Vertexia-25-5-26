@@ -1,3 +1,5 @@
+"use client";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import DoneForYouHeroSection from "@/components/sections/DoneForYouHeroSection";
@@ -6,8 +8,9 @@ import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import FaqSection from "@/components/sections/FaqSection";
 import ProfessionalWebSection from "@/components/sections/ProfessionalWebSection";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
+import PageTransition from "@/components/animations/PageTransition";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Get WordPress Website | Vertexia",
   description:
     "Complete website design and development service handled from start to finish.",
@@ -18,7 +21,8 @@ export const metadata: Metadata = {
 
 export default function DoneForYouWebsitePage() {
   return (
-    <main className="site">
+    <PageTransition>
+      <main className="site">
       <DoneForYouHeroSection />
 
       <section className="pt-10 pb-10 px-4 sm:px-6 lg:px-8">
@@ -502,5 +506,6 @@ export default function DoneForYouWebsitePage() {
       <FooterLinksSection />
 
     </main>
+    </PageTransition>
   );
 }

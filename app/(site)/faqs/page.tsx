@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
+import PageTransition from "@/components/animations/PageTransition";
 
 interface FAQItem {
   id: number;
@@ -231,6 +232,7 @@ function FAQPage() {
   };
 
   return (
+    <PageTransition>
     <main className="min-h-screen bg-black text-white">
       {/* Header Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-800 to-black px-6 py-20 md:py-32">
@@ -427,6 +429,7 @@ function FAQPage() {
 
       <FooterLinksSection />
     </main>
+    </PageTransition>
   );
 }
 

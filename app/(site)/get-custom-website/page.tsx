@@ -1,3 +1,5 @@
+"use client";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import CustomWebsiteHeroSection from "@/components/sections/CustomWebsiteHeroSection";
@@ -6,8 +8,9 @@ import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import FaqSection from "@/components/sections/FaqSection";
 import ProfessionalWebSection from "@/components/sections/ProfessionalWebSection";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
+import PageTransition from "@/components/animations/PageTransition";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Get Custom Website | Vertexia",
   description:
     "Complete website design and development service handled from start to finish.",
@@ -18,7 +21,8 @@ export const metadata: Metadata = {
 
 export default function DoneForYouWebsitePage() {
   return (
-    <main className="min-h-screen bg-[radial-gradient(70%_120%_at_50%_-10%,rgba(147,51,234,0.35)_0%,rgba(147,51,234,0)_62%),radial-gradient(68%_58%_at_50%_62%,rgba(126,34,206,0.55)_0%,rgba(126,34,206,0)_72%),linear-gradient(180deg,#5b21b6_0%,#7c3aed_42%,#a855f7_62%,#5b21b6_82%,#1a1a2e_100%)]">
+    <PageTransition>
+      <main className="min-h-screen bg-[radial-gradient(70%_120%_at_50%_-10%,rgba(147,51,234,0.35)_0%,rgba(147,51,234,0)_62%),radial-gradient(68%_58%_at_50%_62%,rgba(126,34,206,0.55)_0%,rgba(126,34,206,0)_72%),linear-gradient(180deg,#5b21b6_0%,#7c3aed_42%,#a855f7_62%,#5b21b6_82%,#1a1a2e_100%)]">
       <CustomWebsiteHeroSection />
 
       {/* Table Section yahan se completely remove kar di gayi hai */}
@@ -321,5 +325,6 @@ export default function DoneForYouWebsitePage() {
       <FooterLinksSection />
 
     </main>
+    </PageTransition>
   );
 }

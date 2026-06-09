@@ -1,8 +1,11 @@
+"use client";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
+import PageTransition from "@/components/animations/PageTransition";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Refund Policy | Vertexia",
   description:
     "Vertexia Refund Policy - 30-day refund guarantee for new customers. Learn about our refund terms and conditions for web development services.",
@@ -13,7 +16,8 @@ export const metadata: Metadata = {
 
 export default function RefundPolicyPage() {
   return (
-    <main className="site bg-white text-slate-900 font-body">
+    <PageTransition>
+      <main className="site bg-white text-slate-900 font-body">
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="space-y-6">
           <p className="text-sm uppercase tracking-[0.35em] text-[#2563eb] font-accent">
@@ -152,5 +156,6 @@ export default function RefundPolicyPage() {
 
       <FooterLinksSection />
     </main>
+    </PageTransition>
   );
 }

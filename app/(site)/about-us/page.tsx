@@ -1,7 +1,10 @@
+"use client";
+
 import type { Metadata } from "next";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
+import PageTransition from "@/components/animations/PageTransition";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "About Vertexia | Building Websites That Drive Growth",
   description:
     "Learn about Vertexia, our mission, and how we build fast, SEO-friendly websites that help businesses grow online.",
@@ -12,7 +15,8 @@ export const metadata: Metadata = {
 
 export default function AboutUsPage() {
   return (
-    <main className="site bg-black text-white font-body">
+    <PageTransition>
+      <main className="site bg-black text-white font-body">
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
           <div>

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { StaggerContainer, StaggerItem } from "@/components/animations/StaggerContainer";
+import PageTransition from "@/components/animations/PageTransition";
 
 export default function BlogsPage() {
   const words = ["Tradespeople", "Professionals", "Small Business"];
@@ -39,7 +40,8 @@ export default function BlogsPage() {
   }, [displayText, isDeleting, index, words]);
 
   return (
-    <div id="top" className="w-full">
+    <PageTransition>
+      <div id="top" className="w-full">
       {/* Hero Section */}
       <div className="relative min-h-[70vh] md:min-h-[85vh] flex flex-col items-center justify-center text-center px-6 py-32 md:py-48">
         <div 
@@ -98,5 +100,6 @@ export default function BlogsPage() {
         </div>
       </section>
     </div>
+    </PageTransition>
   );
 }
