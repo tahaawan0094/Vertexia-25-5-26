@@ -28,7 +28,7 @@ export default function DoneForYouWebsitePage() {
 
       {/* Features Section */}
       <section className="px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-[1200px]">
+        <div className="mx-auto max-w-[1200px]">  
           <div className="mt-20 pt-20 bg-black rounded-lg px-8 py-12 border-t-0">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-white mb-4">What features are included in your Vertexia website?</h2>
