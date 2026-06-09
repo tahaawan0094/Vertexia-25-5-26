@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { StaggerContainer, StaggerItem } from "@/components/animations/StaggerContainer";
 import PageTransition from "@/components/animations/PageTransition";
+import FooterLinksSection from "@/components/sections/FooterLinksSection";
 
 export default function BlogsPage() {
   const words = ["Tradespeople", "Professionals", "Small Business"];
@@ -99,6 +100,7 @@ export default function BlogsPage() {
           </div>
         </div>
       </section>
+      <FooterLinksSection />
     </div>
     </PageTransition>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Image from "next/image";
 import { Montserrat, Poppins } from "next/font/google";
+import FooterLinksSection from "@/components/sections/FooterLinksSection";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["700", "800"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
@@ -246,6 +247,7 @@ export default function WhatIsVertexia() {
 
         </div>
       </section>
+      <FooterLinksSection />
     </article>
   );
 }
