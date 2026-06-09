@@ -18,10 +18,10 @@ export const metadata: Metadata = {
 
 export default function DoneForYouWebsitePage() {
   return (
-    <main className="site bg-black">
+    <main className="site">
       <DoneForYouHeroSection />
 
-      <section className="bg-[#000] pt-10 pb-10 px-4 sm:px-6 lg:px-8">
+      <section className="pt-10 pb-10 px-4 sm:px-6 lg:px-8">
         <DoneForYouTable />
       </section>
 
@@ -29,7 +29,7 @@ export default function DoneForYouWebsitePage() {
       <HowItWorksSection showButton />
 
       {/* Comparison Table Section */}
-      <section className="bg-black px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-20 sm:px-6 lg:px-8">
         <style>{`
           @keyframes movingLight {
             0% {
