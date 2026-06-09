@@ -8,10 +8,17 @@ export default function DoneForYouHeroSection() {
         aria-hidden="true"
       />
       <div className="relative z-10 mx-auto flex max-w-[1280px] flex-col items-center justify-start gap-8 px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
-        <h1 className="text-balance mx-auto max-w-[960px] text-[110px] leading-[118px] font-medium tracking-[-0.03em] text-white/80 sm:text-[82px] sm:leading-[90px]">
-          Get a <span className="box-decoration-clone inline-block border-l-4 border-[#2a27ff] bg-[linear-gradient(-50deg,rgba(58,41,209,0)_22%,rgba(58,41,209,0.6))] px-4 py-2 text-white/90">website built</span>
-          <span className="block">for you in 7 days</span>
-        </h1>
+        <h1 className="mx-auto max-w-[1200px] text-[110px] leading-[118px] font-medium tracking-[-0.03em] text-white/80 sm:text-[82px] sm:leading-[90px]">
+  <div>
+    <span className="box-decoration-clone inline-block border-l-4 border-[#2a27ff] bg-[linear-gradient(-50deg,rgba(58,41,209,0)_22%,rgba(58,41,209,0.6))] px-2 py-2 text-white/90">
+      Get a wordpress website
+    </span>
+  </div>
+
+  <div className="mt-2">
+    built for you in 7 days
+  </div>
+</h1>
 
 <div className="flex flex-wrap justify-center  text-left">
           {[ 
