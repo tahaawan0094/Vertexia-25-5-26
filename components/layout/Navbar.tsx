@@ -25,8 +25,13 @@ const navLinks: NavLink[] = [
     dropdown: true,
     items: [
       {
-        label: "Done for you websites",
-        href: "/done-for-you-website",
+        label: "Get a wordpress website",
+        href: "/get-wordpress-website",
+        icon: "globe",
+      },
+      {
+        label: "Get custom website",
+        href: "/get-custom-website",
         icon: "globe",
       },
       {

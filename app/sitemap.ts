@@ -15,7 +15,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: "https://vertexiaio.vercel.app/done-for-you-website",
+      url: "https://vertexiaio.vercel.app/get-wordpress-website",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "https://vertexiaio.vercel.app/get-custom-website",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,

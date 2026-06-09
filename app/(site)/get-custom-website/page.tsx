@@ -1,28 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import DoneForYouHeroSection from "@/components/sections/DoneForYouHeroSection";
-import DoneForYouTable from "@/components/sections/DoneForYouTable";
+import CustomWebsiteHeroSection from "@/components/sections/CustomWebsiteHeroSection";
+import CustomWebsiteTable from "@/components/sections/CustomWebsiteTable";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import FaqSection from "@/components/sections/FaqSection";
 import ProfessionalWebSection from "@/components/sections/ProfessionalWebSection";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
 
 export const metadata: Metadata = {
-  title: "Get WordPress Website | Vertexia",
+  title: "Get Custom Website | Vertexia",
   description:
     "Complete website design and development service handled from start to finish.",
   alternates: {
-    canonical: "https://vertexiaio.vercel.app/get-wordpress-website",
+    canonical: "https://vertexiaio.vercel.app/get-custom-website",
   },
 };
 
 export default function DoneForYouWebsitePage() {
   return (
     <main className="site">
-      <DoneForYouHeroSection />
+      <CustomWebsiteHeroSection />
 
       <section className="pt-10 pb-10 px-4 sm:px-6 lg:px-8">
-        <DoneForYouTable />
+        <CustomWebsiteTable />
       </section>
 
       {/* BUTTON INSIDE COMPONENT */}
