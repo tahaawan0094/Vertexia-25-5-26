@@ -11,12 +11,12 @@ export default function DoneForYouHeroSection() {
         <h1 className="mx-auto max-w-[1200px] text-[110px] leading-[118px] font-medium tracking-[-0.03em] text-white/80 sm:text-[82px] sm:leading-[90px]">
   <div>
     <span className="box-decoration-clone inline-block border-l-4 border-[#2a27ff] bg-[linear-gradient(-50deg,rgba(58,41,209,0)_22%,rgba(58,41,209,0.6))] px-2 py-2 text-white/90">
-      Get a wordpress website
+      Get Your Wordpress Website
     </span>
   </div>
 
   <div className="mt-2">
-    built for you in 7 days
+    Built in Just 7 Days
   </div>
 </h1>
 
