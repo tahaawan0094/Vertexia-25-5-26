@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://vertexiaio.vercel.app
+Host: https://vertexia.io
 
 # Sitemaps
-Sitemap: https://vertexiaio.vercel.app/sitemap.xml
+Sitemap: https://vertexia.io/sitemap.xml

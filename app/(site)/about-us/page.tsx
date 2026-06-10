@@ -1,11 +1,10 @@
-"use client";
 
 import type { Metadata } from "next";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
 import PageTransition from "@/components/animations/PageTransition";
 
-const metadata: Metadata = {
-  title: "About Vertexia | Building Websites That Drive Growth",
+export const metadata: Metadata = {
+    title: "About Vertexia | Building Websites That Drive Growth",
   description:
     "Learn about Vertexia, our mission, and how we build fast, SEO-friendly websites that help businesses grow online.",
   alternates: {
@@ -314,5 +313,6 @@ export default function AboutUsPage() {
 
       <FooterLinksSection />
     </main>
+    </PageTransition> 
   );
 }
