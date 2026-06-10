@@ -133,7 +133,7 @@ export default function FooterLinksSection() {
                   
                   <li>
                     <a 
-                      href="mailto:admin.vertexia@gmail.com" 
+                      href="mailto:reach.vertexia@gmail.com" 
                       className="hover:text-yellow-400 transition-colors"
                       aria-label="Email"
                     >

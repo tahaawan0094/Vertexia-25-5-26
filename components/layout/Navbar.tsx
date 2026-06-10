@@ -250,7 +250,7 @@ export default function Navbar() {
 
             <div className="flex flex-col leading-tight">
               <span className="whitespace-nowrap text-[0.95rem] font-semibold">
-                Call Us: (92) 336-8240877
+                Call Us: (92) 335-2831551
               </span>
 
               <span className="whitespace-nowrap text-[0.65rem] tracking-tight text-white/50">

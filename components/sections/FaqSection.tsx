@@ -129,9 +129,9 @@ export default function FaqSection() {
             <p className="mt-8 text-lg text-white/70">Still have questions?</p>
             <p className="mt-4 text-lg text-white/60">
               Call us:{" "}
-              <span className="text-[#2d6bff]">(92) 336-8240877</span>
+              <span className="text-[#2d6bff]">(92) 335-2831551</span>
             </p>
-            <p className="mt-6 text-lg text-[#FF5A4E]">admin.vertexia@gmail.com</p>
+            <p className="mt-6 text-lg text-[#FF5A4E]">reach.vertexia@gmail.com</p>
           </div>
 
           <div className="flex flex-col gap-7">
@@ -178,9 +178,9 @@ export default function FaqSection() {
               <p className="text-lg text-white/70">Still have questions?</p>
               <p className="mt-4 text-lg text-white/60">
                 Call us:{" "}
-                <span className="text-[#2d6bff]">(92) 336-8240877</span>
+                <span className="text-[#2d6bff]">(92) 335-2831551</span>
               </p>
-              <p className="mt-6 text-lg text-[#FF5A4E]">admin.vertexia@gmail.com</p>
+              <p className="mt-6 text-lg text-[#FF5A4E]">reach.vertexia@gmail.com</p>
             </div>
           </div>
         </div>

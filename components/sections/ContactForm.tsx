@@ -145,7 +145,7 @@ export default function ContactForm() {
                   className="mb-8"
                 >
                   <h3 className="text-white font-semibold mb-2 text-sm uppercase tracking-wider">Email</h3>
-                  <p className="text-white/80 text-base">admin.vertexia@gmail.com</p>
+                  <p className="text-white/80 text-base">reach.vertexia@gmail.com</p>
                   <div className="mt-3 border-t border-white/10" />
                 </motion.div>
 

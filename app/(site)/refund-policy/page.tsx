@@ -79,13 +79,13 @@ export default function RefundPolicyPage() {
             </p>
             <ul className="list-disc space-y-2 pl-6 text-slate-600">
               <li>
-                <strong>WhatsApp:</strong> <a href="https://wa.me/923683240877" target="_blank" rel="noopener noreferrer" className="text-[#2563eb] hover:text-[#1d4ed8] underline">+92 3368240877</a>
+                <strong>Phone / WhatsApp:</strong> <a href="https://wa.me/923352831551" target="_blank" rel="noopener noreferrer" className="text-[#2563eb] hover:text-[#1d4ed8] underline">+92 3352831551</a>
               </li>
               <li>
-                <strong>Email:</strong> <a href="mailto:admin.vertexia@gmail.com" className="text-[#2563eb] hover:text-[#1d4ed8] underline">admin.vertexia@gmail.com</a>
+                <strong>Email:</strong> <a href="mailto:reach.vertexia@gmail.com" className="text-[#2563eb] hover:text-[#1d4ed8] underline">reach.vertexia@gmail.com</a>
               </li>
               <li>
-                <strong>Phone:</strong> <a href="tel:+923368240877" className="text-[#2563eb] hover:text-[#1d4ed8] underline">+92 3368240877</a>
+                <strong>Phone:</strong> <a href="tel:+923352831551" className="text-[#2563eb] hover:text-[#1d4ed8] underline">+92 3352831551</a>
               </li>
             </ul>
           </article>
@@ -144,7 +144,7 @@ export default function RefundPolicyPage() {
                 <strong>Email:</strong> <a href="mailto:admin.vertexia@gmail.com" className="text-[#2563eb] hover:text-[#1d4ed8] underline">admin.vertexia@gmail.com</a>
               </p>
               <p>
-                <strong>Phone / WhatsApp:</strong> <a href="https://wa.me/923368240877" target="_blank" rel="noopener noreferrer" className="text-[#2563eb] hover:text-[#1d4ed8] underline">+92 3368240877</a>
+                <strong>Phone / WhatsApp:</strong> <a href="https://wa.me/923352831551" target="_blank" rel="noopener noreferrer" className="text-[#2563eb] hover:text-[#1d4ed8] underline">+92 3352831551</a>
               </p>
               <p>
                 <strong>Last Updated:</strong> 27 July 2023

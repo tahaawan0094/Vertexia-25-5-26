@@ -45,8 +45,8 @@ export default function PrivacyPolicyPage() {
               <p><strong>Business Name:</strong> Vertexia</p>
               <p><strong>Business Type:</strong> Sole Proprietorship</p>
               <p><strong>Business Address:</strong> B6, 4th Street, Zamzama, Clifton, Karachi, Pakistan</p>
-              <p><strong>Support Email:</strong> admin.vertexia@gmail.com</p>
-              <p><strong>Phone / WhatsApp:</strong> +92 3368240877</p>
+              <p><strong>Support Email:</strong> reach.vertexia@gmail.com</p>
+              <p><strong>Phone / WhatsApp:</strong> +92 3352831551</p>
             </div>
           </article>
 
@@ -295,8 +295,8 @@ export default function PrivacyPolicyPage() {
               <p>For privacy-related inquiries or requests:</p>
               <p>Vertexia</p>
               <p>A St, DHA phase 6 Defence V Defence Housing Authority, Karachi, 75500</p>
-              <p>Email: admin.vertexia@gmail.com</p>
-              <p>Phone / WhatsApp: +92 3368240877</p>
+              <p>Email: reach.vertexia@gmail.com</p>
+              <p>Phone / WhatsApp: +92 3352831551</p>
               <p>Date: 1st January, 2026</p>
             </div>
           </article>

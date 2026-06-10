@@ -370,8 +370,8 @@ export default function TermsAndConditionsPage() {
               <p>For legal, billing, or support inquiries:</p>
               <p>Vertexia</p>
               <p>A St, DHA phase 6 Defence V Defence Housing Authority, Karachi, 75500</p>
-              <p>Email: admin.vertexia@gmail.com</p>
-              <p>Phone / WhatsApp: +92 3368240877</p>
+              <p>Email: reach.vertexia@gmail.com</p>
+              <p>Phone / WhatsApp: +92 3352831551</p>
               <p>Date: 1st January, 2026</p>
             </div>
           </article>
