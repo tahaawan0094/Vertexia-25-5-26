@@ -67,7 +67,7 @@ const navLinks: NavLink[] = [
     dropdown: true,
     items: [
       {
-        label: "Our Partners",
+        label: "Our Partners (Coming Soon)",
         href: "#partners",
         icon: "users",
       },
@@ -77,9 +77,9 @@ const navLinks: NavLink[] = [
         icon: "help",
       },
       {
-        label: "Videos",
-        href: "#videos",
-        icon: "play",
+        label: "About",
+        href: "/about-us",
+        icon: "info",
       },
       {
         label: "Vertexia blogs",
@@ -130,6 +130,13 @@ const Icon = ({ name }: { name: string }) => {
       <>
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
         <path d="M6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+      </>
+    ),
+    info: (
+      <>
+        <circle cx="12" cy="12" r="10" />
+        <line x1="12" y1="16" x2="12" y2="12" />
+        <line x1="12" y1="8" x2="12.01" y2="8" />
       </>
     ),
   };
@@ -228,7 +235,14 @@ export default function Navbar() {
                                 <Icon name={item.icon} />
                               </div>
 
-                              <span>{item.label}</span>
+                              <div className="flex items-center gap-2">
+                                <span>{item.label.split(" (Coming")[0]}</span>
+                                {item.label.includes("Coming Soon") && (
+                                  <span className="inline-block bg-green-500 text-black text-[0.65rem] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
+                                    Coming Soon
+                                  </span>
+                                )}
+                              </div>
                             </a>
                           ))}
                         </div>
