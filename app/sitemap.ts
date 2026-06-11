@@ -39,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: "https://vertexiaio.vercel.app/founder",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: "https://vertexiaio.vercel.app/terms-and-conditions",
       lastModified: new Date(),
       changeFrequency: "monthly",

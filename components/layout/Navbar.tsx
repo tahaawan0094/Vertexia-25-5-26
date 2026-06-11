@@ -282,7 +282,7 @@ export default function Navbar() {
               href="#"
               className="text-sm font-medium text-white/90 transition hover:text-white sm:text-base"
             >
-              Login
+              
             </a>
 
             <button
