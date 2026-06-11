@@ -522,6 +522,77 @@ export default function DoneForYouWebsitePage() {
       {/* Professional Web Section */}
       <ProfessionalWebSection centered />
 
+      {/* Related Resources Section */}
+      <section className="px-4 py-20 sm:px-6 lg:px-8 bg-slate-50">
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Explore More Vertexia Services</h2>
+            <p className="text-lg text-slate-600 mb-8">Discover our comprehensive range of web solutions and resources to find the perfect fit for your business needs.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/get-custom-website" className="text-blue-600 hover:text-blue-800">
+                  Get Custom Website
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Professional custom website design and development with full control and unlimited features.</p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/get-wordpress-website" className="text-blue-600 hover:text-blue-800">
+                  Get WordPress Website
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Get a fully built website without any effort on your part. Perfect for businesses that want a hands-off solution.</p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/pricing" className="text-blue-600 hover:text-blue-800">
+                  View Our Pricing
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Transparent pricing with no hidden fees. See exactly what you get with our website packages.</p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/faqs" className="text-blue-600 hover:text-blue-800">
+                  FAQs
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Get answers to common questions about our WordPress services and support.</p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/contact" className="text-blue-600 hover:text-blue-800">
+                  Get In Touch
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Have questions? Contact our team to discuss your WordPress website needs today.</p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/refund-policy" className="text-blue-600 hover:text-blue-800">
+                  Refund Policy
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Learn about our 30-day money-back guarantee and satisfaction guarantee.</p>
+            </div>
+          </div>
+
+          <div className="mt-12 p-8 bg-white rounded-lg border-l-4 border-blue-600">
+            <h3 className="text-xl font-semibold text-slate-900 mb-2">Looking for Other Website Solutions?</h3>
+            <p className="text-slate-600 mb-4">We also offer <Link href="/get-custom-website" className="text-blue-600 hover:text-blue-800 underline">custom website development</Link> and <Link href="/get-wordpress-website" className="text-blue-600 hover:text-blue-800 underline">WordPress website services</Link> for different business needs.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer Links Section */}
       <FooterLinksSection />
 

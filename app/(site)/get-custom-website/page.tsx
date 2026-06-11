@@ -354,8 +354,8 @@ export default function DoneForYouWebsitePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                <Link href="/done-for-you-website" className="text-blue-600 hover:text-blue-800">
-                  Done-For-You Website
+                <Link href="/get-wordpress-website" className="text-blue-600 hover:text-blue-800">
+                  Get WordPress Website
                 </Link>
               </h3>
               <p className="text-slate-600 mb-4">Get a fully built website without any effort on your part. Perfect for businesses that want a hands-off solution.</p>

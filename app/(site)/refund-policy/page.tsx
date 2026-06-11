@@ -49,7 +49,7 @@ export default function RefundPolicyPage() {
             Effective Date: January 1st, 2026
           </p>
           <p className="max-w-3xl text-lg leading-8 text-slate-600">
-            At Vertexia, we stand behind our work and want to ensure your satisfaction. This Refund Policy outlines the terms and conditions for requesting refunds on our services. Learn about <Link href="/get-custom-website" className="text-[#2563eb] hover:text-[#1d4ed8] underline">our custom website services</Link>, view our <Link href="/pricing" className="text-[#2563eb] hover:text-[#1d4ed8] underline">transparent pricing</Link>, or explore <Link href="/done-for-you-website" className="text-[#2563eb] hover:text-[#1d4ed8] underline">our done-for-you website solutions</Link>.
+            At Vertexia, we stand behind our work and want to ensure your satisfaction. This Refund Policy outlines the terms and conditions for requesting refunds on our services. Learn about <Link href="/get-custom-website" className="text-[#2563eb] hover:text-[#1d4ed8] underline">our custom website services</Link>, view our <Link href="/pricing" className="text-[#2563eb] hover:text-[#1d4ed8] underline">transparent pricing</Link>, or explore <Link href="/get-wordpress-website" className="text-[#2563eb] hover:text-[#1d4ed8] underline">our WordPress website solutions</Link>.
           </p>
         </div>
       </section>
@@ -188,8 +188,8 @@ export default function RefundPolicyPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/done-for-you-website" className="text-[#2563eb] hover:text-[#1d4ed8] underline">
-                  Done-for-You Website
+                <Link href="/get-wordpress-website" className="text-[#2563eb] hover:text-[#1d4ed8] underline">
+                  Get WordPress Website
                 </Link>
               </li>
               <li>
