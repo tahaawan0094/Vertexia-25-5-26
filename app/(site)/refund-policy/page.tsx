@@ -1,16 +1,35 @@
-"use client";
-
 import type { Metadata } from "next";
 import Link from "next/link";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
 import PageTransition from "@/components/animations/PageTransition";
 
-const metadata: Metadata = {
-  title: "Refund Policy | Vertexia",
+export const metadata: Metadata = {
+  title: "Refund Policy | Vertexia - 30-Day Money-Back Guarantee",
   description:
-    "Vertexia Refund Policy - 30-day refund guarantee for new customers. Learn about our refund terms and conditions for web development services.",
+    "Vertexia's 30-day refund guarantee for web development services. Learn our complete refund policy, terms, eligibility requirements, and how to request a refund for custom website projects.",
+  keywords: [
+    "refund policy",
+    "money-back guarantee",
+    "web development refund",
+    "website design refund",
+    "customer satisfaction",
+    "vertexia refund",
+  ],
   alternates: {
     canonical: "https://vertexiaio.vercel.app/refund-policy",
+  },
+  openGraph: {
+    title: "Refund Policy | Vertexia - 30-Day Money-Back Guarantee",
+    description:
+      "Vertexia's 30-day refund guarantee for web development services. Learn our complete refund policy, terms, eligibility requirements, and how to request a refund for custom website projects.",
+    url: "https://vertexiaio.vercel.app/refund-policy",
+    type: "website",
+    siteName: "Vertexia",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
   },
 };
 
@@ -30,7 +49,7 @@ export default function RefundPolicyPage() {
             Effective Date: January 1st, 2026
           </p>
           <p className="max-w-3xl text-lg leading-8 text-slate-600">
-            At Vertexia, we stand behind our work and want to ensure your satisfaction. This Refund Policy outlines the terms and conditions for requesting refunds on our services.
+            At Vertexia, we stand behind our work and want to ensure your satisfaction. This Refund Policy outlines the terms and conditions for requesting refunds on our services. Learn about <Link href="/get-custom-website" className="text-[#2563eb] hover:text-[#1d4ed8] underline">our custom website services</Link>, view our <Link href="/pricing" className="text-[#2563eb] hover:text-[#1d4ed8] underline">transparent pricing</Link>, or explore <Link href="/done-for-you-website" className="text-[#2563eb] hover:text-[#1d4ed8] underline">our done-for-you website solutions</Link>.
           </p>
         </div>
       </section>
@@ -150,6 +169,50 @@ export default function RefundPolicyPage() {
                 <strong>Last Updated:</strong> 27 July 2023
               </p>
             </div>
+          </article>
+
+          <article className="space-y-4 rounded-[32px] bg-white p-8 shadow-[0_20px_70px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold text-[#0f172a]">11. More Resources</h2>
+            <p className="text-slate-600 mb-4">
+              Explore additional information about Vertexia's services and policies:
+            </p>
+            <ul className="list-disc space-y-2 pl-6 text-slate-600">
+              <li>
+                <Link href="/" className="text-[#2563eb] hover:text-[#1d4ed8] underline">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/get-custom-website" className="text-[#2563eb] hover:text-[#1d4ed8] underline">
+                  Get Custom Website
+                </Link>
+              </li>
+              <li>
+                <Link href="/done-for-you-website" className="text-[#2563eb] hover:text-[#1d4ed8] underline">
+                  Done-for-You Website
+                </Link>
+              </li>
+              <li>
+                <Link href="/pricing" className="text-[#2563eb] hover:text-[#1d4ed8] underline">
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-[#2563eb] hover:text-[#1d4ed8] underline">
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/about-us" className="text-[#2563eb] hover:text-[#1d4ed8] underline">
+                  About Vertexia
+                </Link>
+              </li>
+              <li>
+                <a href="https://vertexiaio.vercel.app" className="text-[#2563eb] hover:text-[#1d4ed8] underline" target="_blank" rel="noopener noreferrer">
+                  Vertexia Official Website
+                </a>
+              </li>
+            </ul>
           </article>
         </div>
       </section>

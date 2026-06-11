@@ -1,5 +1,3 @@
-"use client";
-
 import type { Metadata } from "next";
 import Link from "next/link";
 import CustomWebsiteHeroSection from "@/components/sections/CustomWebsiteHeroSection";
@@ -10,12 +8,36 @@ import ProfessionalWebSection from "@/components/sections/ProfessionalWebSection
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
 import PageTransition from "@/components/animations/PageTransition";
 
-const metadata: Metadata = {
-  title: "Get Custom Website | Vertexia",
+export const metadata: Metadata = {
+  title: "Get Custom Website | Vertexia - Professional Web Design & Development",
   description:
-    "Complete website design and development service handled from start to finish.",
+    "Professional custom website design and development service handled from start to finish. Get a fully built, SEO-optimized website with ecommerce, bookings, and unlimited edits by our team. Starting at just $599 setup fee.",
+  keywords: [
+    "custom website design",
+    "web development service",
+    "professional website",
+    "ecommerce website",
+    "website design company",
+    "website development",
+    "done-for-you website",
+    "custom domain",
+    "web design services",
+  ],
   alternates: {
     canonical: "https://vertexiaio.vercel.app/get-custom-website",
+  },
+  openGraph: {
+    title: "Get Custom Website | Vertexia - Professional Web Design & Development",
+    description:
+      "Professional custom website design and development service handled from start to finish. Fully built, SEO-optimized websites with ecommerce, bookings, and unlimited edits.",
+    url: "https://vertexiaio.vercel.app/get-custom-website",
+    type: "website",
+    siteName: "Vertexia",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
   },
 };
 
@@ -320,6 +342,77 @@ export default function DoneForYouWebsitePage() {
 
       {/* Professional Web Section */}
       <ProfessionalWebSection centered />
+
+      {/* Related Resources Section */}
+      <section className="px-4 py-20 sm:px-6 lg:px-8 bg-slate-50">
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Explore More Vertexia Services</h2>
+            <p className="text-lg text-slate-600 mb-8">Learn about our other website solutions and resources to help you make the right choice for your business.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/done-for-you-website" className="text-blue-600 hover:text-blue-800">
+                  Done-For-You Website
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Get a fully built website without any effort on your part. Perfect for businesses that want a hands-off solution.</p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/pricing" className="text-blue-600 hover:text-blue-800">
+                  View Our Pricing
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Transparent pricing with no hidden fees. See exactly what you get with our website packages.</p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/faqs" className="text-blue-600 hover:text-blue-800">
+                  FAQs
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Get answers to common questions about our services, process, and support.</p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/contact" className="text-blue-600 hover:text-blue-800">
+                  Get In Touch
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Have questions? Contact our team to discuss your website needs and get started today.</p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/refund-policy" className="text-blue-600 hover:text-blue-800">
+                  Refund Policy
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Learn about our 30-day money-back guarantee and satisfaction guarantee.</p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <Link href="/about-us" className="text-blue-600 hover:text-blue-800">
+                  About Vertexia
+                </Link>
+              </h3>
+              <p className="text-slate-600 mb-4">Discover our story, mission, and why businesses trust Vertexia for their web solutions.</p>
+            </div>
+          </div>
+
+          <div className="mt-12 p-8 bg-white rounded-lg border-l-4 border-blue-600">
+            <h3 className="text-xl font-semibold text-slate-900 mb-2">Looking for WordPress Website Solutions?</h3>
+            <p className="text-slate-600 mb-4">We also offer <a href="https://vertexiaio.vercel.app/get-wordpress-website" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">WordPress website development</a> for those who prefer open-source solutions.</p>
+          </div>
+        </div>
+      </section>
 
       {/* Footer Links Section */}
       <FooterLinksSection />

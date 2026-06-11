@@ -1,5 +1,3 @@
-"use client";
-
 import type { Metadata } from "next";
 import Link from "next/link";
 import DoneForYouHeroSection from "@/components/sections/DoneForYouHeroSection";
@@ -10,12 +8,34 @@ import ProfessionalWebSection from "@/components/sections/ProfessionalWebSection
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
 import PageTransition from "@/components/animations/PageTransition";
 
-const metadata: Metadata = {
-  title: "Get WordPress Website | Vertexia",
+export const metadata: Metadata = {
+  title: "Get WordPress Website | Vertexia - Professional WordPress Web Development",
   description:
-    "Complete website design and development service handled from start to finish.",
+    "Professional WordPress website design and development service. Custom WordPress solutions with full support, easy management, and scalable functionality for your business.",
+  keywords: [
+    "WordPress website design",
+    "WordPress development",
+    "custom WordPress site",
+    "WordPress web development",
+    "professional WordPress",
+    "WordPress services",
+    "WordPress hosting",
+  ],
   alternates: {
     canonical: "https://vertexiaio.vercel.app/get-wordpress-website",
+  },
+  openGraph: {
+    title: "Get WordPress Website | Vertexia - Professional WordPress Web Development",
+    description:
+      "Professional WordPress website design and development service. Custom WordPress solutions with full support, easy management, and scalable functionality.",
+    url: "https://vertexiaio.vercel.app/get-wordpress-website",
+    type: "website",
+    siteName: "Vertexia",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
   },
 };
 
