@@ -3,11 +3,11 @@
 import FadeIn from "@/components/animations/FadeIn";
 import { useMemo, useState } from "react";
 
-const subscriptionCost = 24.99;
+const subscriptionCost = 6873; // 24.99 USD converted to PKR
 
 export default function RoiSection() {
   const [hoursPerWeek, setHoursPerWeek] = useState(5);
-  const [hourlyRate, setHourlyRate] = useState(50);
+  const [hourlyRate, setHourlyRate] = useState(13750);
 
   const { hoursPerMonth, valueOfTime, totalRoi } = useMemo(() => {
     const hoursPerMonthCalc = hoursPerWeek * 4;
@@ -66,7 +66,7 @@ export default function RoiSection() {
               </p>
               <div className="mt-4 flex items-center gap-3">
                 <div className="flex items-center gap-2 rounded-[8px] bg-[#f2f2f2] px-4 py-3 text-lg font-semibold text-black">
-                  <span>$</span>
+                  <span>Rs.</span>
                   <input
                     type="number"
                     min={1}
@@ -87,7 +87,7 @@ export default function RoiSection() {
                 <span className="block">Every Month with Vertexia</span>
               </p>
               <div className="mt-6 text-[64px] font-semibold">
-                ${totalRoi.toLocaleString()}
+                Rs.{totalRoi.toLocaleString()}
               </div>
               <a
                 href="/pricing"
@@ -109,17 +109,17 @@ export default function RoiSection() {
                 <div className="flex items-center justify-between py-1">
                   <span>Value of Vertexia for saving {hoursPerMonth} hours of your time</span>
                   <span className="text-white">
-                    ${valueOfTime.toLocaleString()}
+                    Rs.{valueOfTime.toLocaleString()}
                   </span>
                 </div>
                 <div className="flex items-center justify-between py-1">
                   <span>Cost of Vertexia subscription per month</span>
-                  <span className="text-white">${subscriptionCost}</span>
+                  <span className="text-white">Rs.{subscriptionCost}</span>
                 </div>
                 <div className="mt-4 border-t border-white/10 pt-4 text-base font-semibold text-white">
                   <div className="flex items-center justify-between">
                     <span>Total ROI per month</span>
-                    <span>${totalRoi.toLocaleString()}</span>
+                    <span>Rs.{totalRoi.toLocaleString()}</span>
                   </div>
                 </div>
               </div>
