@@ -2,10 +2,20 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 import { StaggerContainer, StaggerItem } from "@/components/animations/StaggerContainer";
 import PageTransition from "@/components/animations/PageTransition";
 import FooterLinksSection from "@/components/sections/FooterLinksSection";
+
+const blogCards = [
+  {
+    title: "Custom Website vs WordPress: Which One Fits Your Business?",
+    excerpt:
+      "Compare speed, SEO, design flexibility, cost, and scalability to decide what works best for your 2026 growth plan.",
+    image: "/Blog images/modern-web-development-digital-growth-by-vertexia.webp",
+    href: "/blogs/website-development-cost-pakistan-2026",
+    tag: "Website Strategy",
+  },
+];
 
 export default function BlogsPage() {
   const words = ["Tradespeople", "Professionals", "Small Business"];
@@ -70,7 +80,7 @@ export default function BlogsPage() {
       
       {/* New White Background Section */}
       <section className="w-full bg-white pb-20 md:pb-32 px-6">
-        <div className="max-w-[1000px] mx-auto relative z-10 -mt-50 md:-mt-42">
+        <div className="max-w-[1000px] mx-auto relative z-10 -mt-50 md:-mt-42 space-y-10 md:space-y-14">
           <div className="bg-[#111111] rounded-3xl md:rounded-[40px] overflow-hidden shadow-2xl transition-transform hover:scale-[1.01] duration-500">
             {/* Image Container */}
             <div className="relative w-full aspect-[16/9] p-4 bg-[#0a0a0a]">
@@ -96,6 +106,42 @@ export default function BlogsPage() {
                   Learn More
                 </button>
               </Link>
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-6 flex items-center justify-between">
+              <h3 className="text-2xl font-bold text-[#111111]">Latest Articles</h3>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {blogCards.map((card) => (
+                <Link
+                  key={card.title}
+                  href={card.href}
+                  className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                >
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <span className="absolute left-4 top-4 rounded-full bg-[#FF5A4E] px-3 py-1 text-xs font-semibold text-white">
+                      {card.tag}
+                    </span>
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl font-bold leading-snug text-slate-900 transition group-hover:text-[#FF5A4E]">
+                      {card.title}
+                    </h4>
+                    <p className="mt-3 text-sm leading-6 text-slate-600">{card.excerpt}</p>
+                    <span className="mt-4 inline-flex items-center text-sm font-semibold text-[#FF5A4E]">
+                      Read article
+                      <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
+                    </span>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
