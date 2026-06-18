@@ -9,33 +9,81 @@ const quickReplies = [
   "I’m new — help me get started 🚀",
 ];
 
-const botResponses: Record<string, string> = {
-  cost: "Most Vertexia websites start around PKR 22,000 depending on features.",
-  ecommerce: "Yes, we build full ecommerce stores with checkout + payments.",
-  service: "We build custom React/Next.js websites + SEO optimization.",
-  default:
-    "Hi 👋 I’m Vexa — I can help you build a website, check pricing, or guide you.",
-};
-
 function getBotReply(text: string) {
   const lower = text.toLowerCase();
 
-  if (lower.includes("price") || lower.includes("cost")) return botResponses.cost;
-  if (lower.includes("shop") || lower.includes("ecom")) return botResponses.ecommerce;
-  if (lower.includes("service") || lower.includes("build")) return botResponses.service;
+  // PRICING
+  if (
+    lower.includes("price") ||
+    lower.includes("cost") ||
+    lower.includes("pricing") ||
+    lower.includes("budget") ||
+    lower.includes("kitna")
+  ) {
+    return "Our websites start from PKR 22,000 depending on features and complexity.";
+  }
 
-  return botResponses.default;
+  // ECOMMERCE
+  if (
+    lower.includes("ecom") ||
+    lower.includes("shop") ||
+    lower.includes("store") ||
+    lower.includes("payment") ||
+    lower.includes("checkout")
+  ) {
+    return "Yes 👍 We build full ecommerce stores with cart, checkout, and payment integration.";
+  }
+
+  // SERVICES
+  if (
+    lower.includes("service") ||
+    lower.includes("what do you do") ||
+    lower.includes("offer") ||
+    lower.includes("build") ||
+    lower.includes("website") ||
+    lower.includes("design")
+  ) {
+    return "We create custom React / Next.js websites, ecommerce stores, and SEO-optimized business websites.";
+  }
+
+  // SEO
+  if (
+    lower.includes("seo") ||
+    lower.includes("ranking") ||
+    lower.includes("google")
+  ) {
+    return "Yes 👍 We also provide SEO services to help your website rank on Google and get organic traffic.";
+  }
+
+  // GREETING
+  if (
+    lower.includes("hi") ||
+    lower.includes("hello") ||
+    lower.includes("hey")
+  ) {
+    return "Hey 👋 I’m Vexa. Tell me what you want to build or improve for your business.";
+  }
+
+  // SMART FALLBACK (not repetitive)
+  const fallbackReplies = [
+    "Can you tell me a bit more so I can help you better?",
+    "I can help with pricing, websites, SEO, or ecommerce. What are you looking for?",
+    "Are you trying to build a new website or improve an existing one?",
+  ];
+
+  return fallbackReplies[Math.floor(Math.random() * fallbackReplies.length)];
 }
 
 export default function VexaBot() {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
+
   const [messages, setMessages] = useState([
     {
       id: 1,
       from: "bot",
       text:
-        "Hi there 👋 What brings you in today? Are you looking to grow your business online?",
+        "Hi there 👋 I’m Vexa. I can help you build websites, check pricing, or guide your business online.",
     },
   ]);
 
@@ -43,13 +91,17 @@ export default function VexaBot() {
     const value = (text ?? input).trim();
     if (!value) return;
 
-    setMessages((prev) => [
-      ...prev,
-      { id: Date.now(), from: "user", text: value },
-    ]);
+    // USER MESSAGE
+    const userMessage = {
+      id: Date.now(),
+      from: "user",
+      text: value,
+    };
 
+    setMessages((prev) => [...prev, userMessage]);
     setInput("");
 
+    // BOT RESPONSE
     setTimeout(() => {
       setMessages((prev) => [
         ...prev,
@@ -59,7 +111,7 @@ export default function VexaBot() {
           text: getBotReply(value),
         },
       ]);
-    }, 400);
+    }, 500);
   };
 
   return (
@@ -87,13 +139,13 @@ export default function VexaBot() {
               {/* HEADER */}
               <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
                 <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center shadow-md">
+                  <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center">
                     <Sparkles size={18} className="text-black" />
                   </div>
 
                   <div>
                     <p className="text-white font-semibold">Vexa</p>
-                    <p className="text-xs text-gray-400">The team can also help</p>
+                    <p className="text-xs text-gray-400">AI Website Assistant</p>
                   </div>
                 </div>
 
@@ -105,9 +157,9 @@ export default function VexaBot() {
                 </button>
               </div>
 
-              {/* INTRO TEXT */}
+              {/* INTRO */}
               <div className="px-5 pt-4 text-sm text-gray-300">
-                Ask anything, or share your requirements 👇
+                Ask anything about websites, pricing, or SEO 👇
               </div>
 
               {/* MESSAGES */}
@@ -166,7 +218,7 @@ export default function VexaBot() {
         )}
       </AnimatePresence>
 
-      {/* FLOAT BUTTON (ICON REPLACED) */}
+      {/* FLOAT BUTTON */}
       <button
         onClick={() => setIsOpen(true)}
         className="h-14 w-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:scale-105 transition"
