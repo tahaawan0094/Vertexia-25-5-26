@@ -21,31 +21,8 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Vertexia",
-    "url": "https://vertexiaio.vercel.app/",
-    "logo": "https://vertexiaio.vercel.app/new-header-logo.png",
-    "founder": {
-      "@type": "Person",
-      "name": "TAHA AWAN"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/vertexia-io-b03923410/",
-      "https://www.facebook.com/profile.php?id=61589778596884"
-    ]
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
-        }}
-      />
-      <main className="site">
+    <main className="site">
       <HeroSection />
       <ShowcaseSection />
       <AlternativesSection />
@@ -61,6 +38,5 @@ export default function HomePage() {
       <ProfessionalWebSection />
       <FooterLinksSection />
     </main>
-    </>
   );
 }

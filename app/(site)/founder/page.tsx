@@ -21,8 +21,33 @@ export const metadata: Metadata = {
 };
 
 export default function FounderPage() {
+  const founderSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://vertexiaio.vercel.app/#taha-awan",
+    name: "Taha Awan",
+    jobTitle: "CEO & Founder",
+    worksFor: {
+      "@id": "https://vertexiaio.vercel.app/#organization",
+    },
+    url: "https://vertexiaio.vercel.app/founder",
+    image: "https://vertexiaio.vercel.app/About-Us/founder-taha-awan.webp",
+    sameAs: [
+      "https://www.linkedin.com/in/vertexia-io-b03923410/",
+      "https://www.facebook.com/profile.php?id=61589778596884",
+      "https://www.instagram.com/vertexia.io/",
+      "https://x.com/vertexiadev",
+    ],
+  };
+
   return (
     <PageTransition>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(founderSchema),
+        }}
+      />
       <main className="site bg-black text-white font-body">
         {/* Hero Section */}
         <section className="relative overflow-hidden px-6 py-32 md:py-48 bg-[radial-gradient(70%_120%_at_50%_-10%,rgba(46,204,113,0.35)_0%,rgba(46,204,113,0)_62%),radial-gradient(68%_58%_at_50%_62%,rgba(46,204,113,0.55)_0%,rgba(46,204,113,0)_72%),linear-gradient(180deg,#022e0b_0%,#033b1a_42%,#2ecc71_62%,#0d2b0f_82%,#01030b_100%)]">
