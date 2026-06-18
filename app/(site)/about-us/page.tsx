@@ -198,24 +198,24 @@ export default function AboutUsPage() {
             <article className="rounded-[32px] bg-white p-6 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
               <div className="mx-auto mb-6 h-[250px] w-full overflow-hidden rounded-[32px] bg-slate-100">
                 <img
-                  src="/pics/1.png"
-                  alt="Christine Telyan portrait"
-                  title="Christine Telyan"
+                  src="/About-Us/founder-taha-awan.webp"
+                  alt="Taha Awan portrait"
+                  title="Taha Awan"
                   className="h-full w-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-semibold text-[#0f172a]">Taha Awan</h3>
               <p className="mt-4 text-base leading-7 text-[#475569]">
-                CEO & Co-founder. Relentless. Curious. Focused on making good things happen.
+                CEO & Founder – Turning ideas into momentum every single day.
               </p>
             </article>
 
             <article className="rounded-[32px] bg-white p-6 text-center shadow-[0_25px_60px_rgba(15,23,42,0.08)]">
               <div className="mx-auto mb-6 h-[250px] w-full overflow-hidden rounded-[32px] bg-slate-100">
                 <img
-                  src="/1.png"
-                  alt="Anh Pham Vu portrait"
-                  title="Anh Pham Vu"
+                  src="/About-Us/co-founder-aamar.webp"
+                  alt="M.Aamar portrait"
+                  title="M.Aamar"
                   className="h-full w-full object-cover"
                 />
               </div>
