@@ -2,7 +2,6 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { Sparkles } from "lucide-react";
 
 const quickReplies = [
   "I’m already a customer 🙋‍♂️",
@@ -12,7 +11,6 @@ const quickReplies = [
 function getBotReply(text: string) {
   const lower = text.toLowerCase();
 
-  // PRICING
   if (
     lower.includes("price") ||
     lower.includes("cost") ||
@@ -23,7 +21,6 @@ function getBotReply(text: string) {
     return "Our websites start from PKR 22,000 depending on features and complexity.";
   }
 
-  // ECOMMERCE
   if (
     lower.includes("ecom") ||
     lower.includes("shop") ||
@@ -34,11 +31,8 @@ function getBotReply(text: string) {
     return "Yes 👍 We build full ecommerce stores with cart, checkout, and payment integration.";
   }
 
-  // SERVICES
   if (
     lower.includes("service") ||
-    lower.includes("what do you do") ||
-    lower.includes("offer") ||
     lower.includes("build") ||
     lower.includes("website") ||
     lower.includes("design")
@@ -46,7 +40,6 @@ function getBotReply(text: string) {
     return "We create custom React / Next.js websites, ecommerce stores, and SEO-optimized business websites.";
   }
 
-  // SEO
   if (
     lower.includes("seo") ||
     lower.includes("ranking") ||
@@ -55,7 +48,6 @@ function getBotReply(text: string) {
     return "Yes 👍 We also provide SEO services to help your website rank on Google and get organic traffic.";
   }
 
-  // GREETING
   if (
     lower.includes("hi") ||
     lower.includes("hello") ||
@@ -64,14 +56,13 @@ function getBotReply(text: string) {
     return "Hey 👋 I’m Vexa. Tell me what you want to build or improve for your business.";
   }
 
-  // SMART FALLBACK (not repetitive)
-  const fallbackReplies = [
+  const fallback = [
     "Can you tell me a bit more so I can help you better?",
     "I can help with pricing, websites, SEO, or ecommerce. What are you looking for?",
     "Are you trying to build a new website or improve an existing one?",
   ];
 
-  return fallbackReplies[Math.floor(Math.random() * fallbackReplies.length)];
+  return fallback[Math.floor(Math.random() * fallback.length)];
 }
 
 export default function VexaBot() {
@@ -83,7 +74,7 @@ export default function VexaBot() {
       id: 1,
       from: "bot",
       text:
-        "Hi there 👋 I’m Vexa. I can help you build websites, check pricing, or guide your business online.",
+        "Hi 👋 I’m Vexa. I can help you with websites, pricing, SEO, or ecommerce.",
     },
   ]);
 
@@ -91,17 +82,13 @@ export default function VexaBot() {
     const value = (text ?? input).trim();
     if (!value) return;
 
-    // USER MESSAGE
-    const userMessage = {
-      id: Date.now(),
-      from: "user",
-      text: value,
-    };
+    setMessages((prev) => [
+      ...prev,
+      { id: Date.now(), from: "user", text: value },
+    ]);
 
-    setMessages((prev) => [...prev, userMessage]);
     setInput("");
 
-    // BOT RESPONSE
     setTimeout(() => {
       setMessages((prev) => [
         ...prev,
@@ -139,8 +126,23 @@ export default function VexaBot() {
               {/* HEADER */}
               <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
                 <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center">
-                    <Sparkles size={18} className="text-black" />
+                  {/* CUSTOM ICON (NO LIBRARY) */}
+                  <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center shadow-md">
+                <svg
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="black"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+>
+  <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
+  <circle cx="9" cy="12" r="1" />
+  <circle cx="12" cy="12" r="1" />
+  <circle cx="15" cy="12" r="1" />
+</svg>
                   </div>
 
                   <div>
@@ -223,7 +225,22 @@ export default function VexaBot() {
         onClick={() => setIsOpen(true)}
         className="h-14 w-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:scale-105 transition"
       >
-        <Sparkles size={20} className="text-black" />
+        {/* SAME ICON */}
+<svg
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="black"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+>
+  <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
+  <circle cx="9" cy="12" r="1" />
+  <circle cx="12" cy="12" r="1" />
+  <circle cx="15" cy="12" r="1" />
+</svg>
       </button>
     </div>
   );
